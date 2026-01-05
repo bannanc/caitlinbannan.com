@@ -56,9 +56,11 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: 'njk',
     passthroughFileCopy: true,
     dir: {
-      input: 'src',
-      includes: "_includes",     // where header/footer/layouts live
-      output: "_site"
+      input: "src",
+      output: "./_site",
+      includes: "_includes",
+      layouts: "_includes/layouts",
+      data: "_data"
     },
   };
 };
