@@ -89,12 +89,26 @@
 }
 
 .gig-compact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem;
   padding: 0.5rem 0;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+
+  &.gig-expandable {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+
+    &.expanded {
+      background: #f9f9f9;
+    }
+  }
+
+  .gig-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
 
   .gig-date {
     font-weight: 600;
@@ -107,6 +121,73 @@
 
   .gig-series {
     font-weight: 600;
+  }
+
+  .gig-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+    color: #666;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      color: #000;
+    }
+
+    svg {
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &.expanded .gig-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .gig-program {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+
+    h4 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .dance-program-list {
+      margin: 0;
+      padding-left: 1.5rem;
+
+      .program-dance {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+
+        a {
+          color: #2c5f9e;
+          text-decoration: underline;
+
+          &:hover {
+            color: #1a3a5c;
+          }
+        }
+
+        .dance-video-link {
+          margin-left: 0.5rem;
+          font-size: 0.9em;
+          font-style: italic;
+        }
+      }
+
+      .program-break {
+        margin: 1rem 0;
+        font-style: italic;
+        color: #666;
+        list-style: none;
+        text-align: center;
+      }
+    }
   }
 
   a {
@@ -291,12 +372,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #2c5f9e;
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
     font-weight: 500;
 
     &:hover {
-      color: #1a3a5c;
+      text-decoration: underline;
     }
 
     .video-icon {
@@ -311,7 +392,7 @@
     grid-template-columns: 1fr;
   }
 
-  .gig-compact {
+  .gig-compact .gig-summary {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;

@@ -70,33 +70,70 @@ eleventyNavigation:
           {% set currentYear = gigYear %}
         {% endif %}
 
-        <article class="gig-compact">
-          <time class="gig-date" datetime="{{ gig.date }}">
-            {{ gig.date | date("MMM d") }}
-          </time>
-          <span class="gig-divider">·</span>
-          <span class="gig-series">
-            {% if gig.series_url %}
-              <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
-                {{ gig.series }}
-              </a>
-            {% else %}
-              {{ gig.series }}
-            {% endif %}
-          </span>
-          <span class="gig-divider">·</span>
-          <span class="gig-location">{{ gig.location }}</span>
-          {% if gig.band %}
+        <article class="gig-compact {% if gig.program and gig.program.dances %}gig-expandable{% endif %}">
+          <div class="gig-summary">
+            <time class="gig-date" datetime="{{ gig.date }}">
+              {{ gig.date | date("MMM d") }}
+            </time>
             <span class="gig-divider">·</span>
-            <span class="gig-band">
-              {% if gig.band_url %}
-                <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
-                  {{ gig.band }}
+            <span class="gig-series">
+              {% if gig.series_url %}
+                <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
+                  {{ gig.series }}
                 </a>
               {% else %}
-                {{ gig.band }}
+                {{ gig.series }}
               {% endif %}
             </span>
+            <span class="gig-divider">·</span>
+            <span class="gig-location">{{ gig.location }}</span>
+            {% if gig.band %}
+              <span class="gig-divider">·</span>
+              <span class="gig-band">
+                {% if gig.band_url %}
+                  <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                    {{ gig.band }}
+                  </a>
+                {% else %}
+                  {{ gig.band }}
+                {% endif %}
+              </span>
+            {% endif %}
+            {% if gig.program and gig.program.dances %}
+              <button class="gig-toggle" aria-label="Show program">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                  <path d="M6 9L1 4h10z"/>
+                </svg>
+              </button>
+            {% endif %}
+          </div>
+
+          {% if gig.program and gig.program.dances %}
+            <div class="gig-program" hidden>
+              <h4>Program</h4>
+              <ol class="dance-program-list">
+                {% for dance in gig.program.dances %}
+                  <li class="program-dance">
+                    {% if dance.url %}
+                      <a href="{{ dance.url }}" target="_blank" rel="noopener">
+                        <strong>{{ dance.title }}</strong>
+                      </a>
+                    {% else %}
+                      <strong>{{ dance.title }}</strong>
+                    {% endif %}
+                    {% if dance.author %} by {{ dance.author }}{% endif %}
+                    {% if dance.video %}
+                      <a href="{{ dance.video }}" target="_blank" rel="noopener" class="dance-video-link">
+                        (video)
+                      </a>
+                    {% endif %}
+                  </li>
+                  {% if gig.program.break_after and loop.index == gig.program.break_after %}
+                    <li class="program-break">— Break —</li>
+                  {% endif %}
+                {% endfor %}
+              </ol>
+            </div>
           {% endif %}
         </article>
 

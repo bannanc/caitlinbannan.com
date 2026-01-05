@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
-    "watch:sass": "sass --no-source-map --watch src/assets/scss:_site/assets/css",
-    "build:sass": "sass --no-source-map src/assets/scss:_site/assets/css",
+    "watch:sass": "sass --no-source-map --watch src/assets/scss:_site/assets/styles",
+    "build:sass": "sass --no-source-map src/assets/scss:_site/assets/styles",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
