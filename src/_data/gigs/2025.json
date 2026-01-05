@@ -1,0 +1,71 @@
+{
+  "year": 2025,
+  "gigs": [
+    {
+      "date": "2025-12-04",
+      "series": "Lake City Contra Dance",
+      "location": "Seattle, WA",
+      "band": "Beregovski's All Stars (Laurie Andres, Jimmy Austin, W.B. Reid, and Carl Shutoff)",
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "The Nice Combination",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1",
+            "tags": ["glossary"]
+          },
+          {
+            "title": "Becket in the Kitchen",
+            "author": "Becky Hill",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17"
+          },
+          {
+            "title": "A Dance for Dan",
+            "author": "Bill Olson",
+            "url": "https://www.billolsondance.com/dandance"
+          },
+          {
+            "title": "The 24th of May",
+            "author": "Yoyo Zhou",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15057"
+          },
+          {
+            "title": "All the Way Over & All the Way Back",
+            "author": "Jacqui Grennan",
+            "url": "https://www.jacquigrennan.com/all-the-way-over",
+            "video": "https://youtu.be/QW8iY2yQAxk?si=cGhuCKLgev5QuEKW"
+          },
+          {
+            "title":"Train Delay",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#traindelay",
+            "video": "https://youtu.be/3XnNUj3rLbU?si=3XXbZETx0VqODZOy",
+            "tags": ["shadow", "closer"]
+          },
+          {
+            "title": "The Carousel",
+            "author": "Tom Hinds",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10324"
+          },
+          {
+            "title": "Shadows of St. Louis",
+            "author": "Nicholas Rockstroh",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14190"
+          },
+          {
+            "title": "Marshmallows in Flight",
+            "author": "Rich Goss",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=13690"
+          },
+          {
+            "title":"A Stroll in the Hey",
+            "author": "Jacqui Grennan",
+            "url": "https://www.jacquigrennan.com/strollinthehey"
+          }
+        ]
+      }
+    }
+  ]
+}
+

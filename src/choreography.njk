@@ -1,0 +1,56 @@
+---
+pagination:
+  data: choreography
+  size: 1
+  alias: dance
+permalink: "/choreography/{{ dance.slug }}/"
+layout: layouts/base.njk
+---
+
+<article class="dance">
+
+  <h1>{{ dance.title }}</h1>
+  <p class="meta">
+    {{ dance.formation }} · {{ dance.progression }}
+    {% if dance.author %} · {{ dance.author }}{% endif %}
+  </p>
+
+  <section class="figures">
+    {% for fig in dance.figures %}
+      <h2>{{ fig.section }}</h2>
+      <ul>
+        {% for move in fig.moves %}
+          <li>{{ move }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </section>
+
+  {% if dance.notes %}
+    <section class="notes">
+      <h2>Notes</h2>
+      <ul>
+        {% for note in dance.notes %}
+          <li>{{ note }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if dance.videos %}
+    <section class="videos">
+      <h2>Videos</h2>
+      <ul>
+        {% for video in dance.videos %}
+          <li>
+            <a href="{{ video.url }}" target="_blank" rel="noopener">
+              {{ video.label }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+</article>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ title }} | Caitlin Bannan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription or summary }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/styles/main.css">
+
+    <!-- JS -->
+    <script src="/assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    {# Header include (Fernfolio-style) #}
+    {% include "header.njk" %}
+
+    <main class="site-content">
+      {{ content | safe }}
+    </main>
+
+    {# Footer #}
+    {% include "footer.njk" %}
+  </body>
+</html>

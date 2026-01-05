@@ -1,0 +1,37 @@
+---
+title: Gigs
+layout: layouts/base.njk
+---
+
+<h1>Gigs</h1>
+
+{% if gigs.upcoming.length %}
+  <h2>Upcoming</h2>
+
+  {% for gig in gigs.upcoming %}
+    <article class="gig">
+      <h3>{{ gig.series }}</h3>
+      <p class="meta">
+        {{ gig.date | date("MMMM d, yyyy") }} ·
+        {{ gig.location }} ·
+        {{ gig.band }}
+      </p>
+    </article>
+  {% endfor %}
+{% endif %}
+
+<h2>Past</h2>
+
+{% set currentYear = "" %}
+{% for gig in gigs.past %}
+  {% if gig.year != currentYear %}
+    <h3>{{ gig.year }}</h3>
+    {% set currentYear = gig.year %}
+  {% endif %}
+
+  <article class="gig">
+    <strong>{{ gig.series }}</strong>
+    — {{ gig.date | date("MMMM d") }}
+  </article>
+{% endfor %}
+
