@@ -1,8 +1,10 @@
 ---
 title: Home
 layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
-
 <div class="home-page">
   {# Hero section #}
   <section class="hero">
@@ -24,14 +26,13 @@ layout: layouts/base.njk
   </section>
 
   {# Upcoming gigs section #}
-  {% if gigs.upcoming and gigs.upcoming.length %}
+  {% if gigs and gigs.upcoming and gigs.upcoming.length > 0 %}
     <section class="upcoming-gigs">
       <h2>Upcoming Gigs</h2>
-
-      <ul class="gig-list">
+      <div class="gig-list">
         {% for gig in gigs.upcoming | slice(0, 3) %}
-          <li>
-            <strong>
+          <article class="gig-card">
+            <h3 class="gig-series">
               {% if gig.series_url %}
                 <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
                   {{ gig.series }}
@@ -39,27 +40,28 @@ layout: layouts/base.njk
               {% else %}
                 {{ gig.series }}
               {% endif %}
-            </strong>
-            <br>
-
-            <time datetime="{{ gig.date }}">
-              {{ gig.date | date("MMMM d, yyyy") }}
-            </time> · {{ gig.location }}
-
-            {% if gig.band %}
-              ·
-              {% if gig.band_url %}
-                <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
-                  {{ gig.band }}
-                </a>
-              {% else %}
-                {{ gig.band }}
+            </h3>
+            <div class="gig-details">
+              <time class="gig-date" datetime="{{ gig.date }}">
+                {{ gig.date | date("EEEE, MMMM d, yyyy") }}
+              </time>
+              <span class="gig-location">{{ gig.location }}</span>
+              {% if gig.band %}
+                <span class="gig-band">
+                  with
+                  {% if gig.band_url %}
+                    <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                      {{ gig.band }}
+                    </a>
+                  {% else %}
+                    {{ gig.band }}
+                  {% endif %}
+                </span>
               {% endif %}
-            {% endif %}
-          </li>
+            </div>
+          </article>
         {% endfor %}
-      </ul>
-
+      </div>
       <p class="more">
         <a href="/gigs/">See all gigs →</a>
       </p>
