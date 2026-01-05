@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "cross-env npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env npm-run-all build:sass build:scripts build:eleventy",
+    "watch:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./_site/assets/js/main.bundle.js\"",
+    "build:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --minify --outfile=\"./_site/assets/js/main.bundle.js\"",
+    "watch:sass": "sass --no-source-map --watch src/assets/scss:_site/assets/css/",
+    "build:sass": "sass --no-source-map src/assets/scss/main.scss _site/assets/css/main.css",
+    "watch:eleventy": "eleventy --serve --incremental",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
+    "clean": "rimraf './_site'"
   },
   "repository": {
     "type": "git",
@@ -39,6 +47,7 @@
     "postcss-cli": "^10.0.0",
     "postcss-scss": "^4.0.4",
     "rimraf": "^3.0.2",
+    "sass": "^1.54.3",
     "turbolinks": "^5.2.0"
   }
 }
