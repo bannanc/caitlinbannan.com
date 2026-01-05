@@ -19,7 +19,9 @@ let allGigs = [];
 for (const file of gigFiles) {
     const filePath = path.join(gigsFolder, file);
     try {
-        const fileGigs = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+        const fileData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+        // Handle both array format and {year, gigs} format
+        const fileGigs = Array.isArray(fileData) ? fileData : (fileData.gigs || []);
         allGigs = allGigs.concat(fileGigs);
     } catch (err) {
         console.error(`Error reading ${file}:`, err.message);
