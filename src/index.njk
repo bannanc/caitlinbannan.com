@@ -27,45 +27,52 @@ eleventyNavigation:
     </div>
   </section>
 
-  {% if gigs.upcoming and gigs.upcoming.length %}
-    <section class="upcoming-gigs">
-      <h2>Upcoming Gigs</h2>
-      <div class="gig-list">
-        {% for gig in gigs.upcoming | slice(0, 3) %}
-          <article class="gig-card">
-            <h3 class="gig-series">
-              {% if gig.series_url %}
-                <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
+    {% if gigs.upcoming.length %}
+      <section class="upcoming-gigs">
+        <h2>Upcoming Gigs</h2>
+        <div class="gig-list">
+          {% for gig in gigs.upcoming %}
+            <article class="gig-card">
+              <h3 class="gig-series">
+                {% if gig.series_url %}
+                  <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
+                    {{ gig.series }}
+                  </a>
+                {% else %}
                   {{ gig.series }}
-                </a>
-              {% else %}
-                {{ gig.series }}
-              {% endif %}
-            </h3>
-            <div class="gig-details">
-              <time class="gig-date" datetime="{{ gig.date }}">
-                {{ gig.date | date("EEEE, MMMM d, yyyy") }}
-              </time>
-              <span class="gig-location">{{ gig.location }}</span>
-              {% if gig.band %}
-                <span class="gig-band">
-                  with 
-                  {% if gig.band_url %}
-                    <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                {% endif %}
+              </h3>
+              <div class="gig-details">
+                <time class="gig-date" datetime="{{ gig.date }}">
+                  {{ gig.date | date("EEEE, MMMM d, yyyy") }}
+                </time>
+                <span class="gig-location">{{ gig.location }}</span>
+                {% if gig.band %}
+                  <span class="gig-band">
+                    with
+                    {% if gig.band_url %}
+                      <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                        {{ gig.band }}
+                      </a>
+                    {% else %}
                       {{ gig.band }}
-                    </a>
-                  {% else %}
-                    {{ gig.band }}
-                  {% endif %}
-                </span>
-              {% endif %}
-            </div>
-          </article>
-        {% endfor %}
-      </div>
+                    {% endif %}
+                  </span>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
       <p class="more">
         <a href="/gigs/">See all gigs →</a>
       </p>
-    </section>
-  {% endif %}
-</div>
+      </section>
+    {% else %}
+      <section class="upcoming-gigs">
+        <h2>Upcoming Gigs</h2>
+        <p>No upcoming gigs scheduled at the moment. Check back soon!</p>
+      <p class="more">
+        <a href="/gigs/">See all previous gigs →</a>
+      </p>
+      </section>
+    {% endif %}

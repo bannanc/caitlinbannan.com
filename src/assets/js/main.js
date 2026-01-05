@@ -1,9 +1,14 @@
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".main-nav");
+// Simple dark mode toggle without webpack
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.querySelector('[data-theme-switch]');
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-}
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = document.documentElement.dataset.theme;
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem('theme', newTheme);
+        });
+    }
+});
