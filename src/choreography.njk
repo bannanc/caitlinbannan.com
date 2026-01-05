@@ -1,59 +1,38 @@
 ---
-pagination:
-  data: choreography
-  size: 1
-  alias: dance
-permalink: "/choreography/{{ dance.slug }}/"
+title: Choreography
 layout: layouts/base.njk
 eleventyNavigation:
   key: Choreography
   order: 2
 ---
 
-<article class="dance">
+<div class="choreography-page">
+  <h1>{{ title }}</h1>
+  <p class="intro">A collection of contra dances I call regularly.</p>
 
-  <h1>{{ dance.title }}</h1>
-  <p class="meta">
-    {{ dance.formation }} · {{ dance.progression }}
-    {% if dance.author %} · {{ dance.author }}{% endif %}
-  </p>
-
-  <section class="figures">
-    {% for fig in dance.figures %}
-      <h2>{{ fig.section }}</h2>
-      <ul>
-        {% for move in fig.moves %}
-          <li>{{ move }}</li>
-        {% endfor %}
-      </ul>
+  <div class="dance-grid">
+    {% for dance in choreography %}
+      <article class="dance-card">
+        <h2 class="dance-title">
+          <a href="/choreography/{{ dance.slug }}/">
+            {{ dance.title }}
+          </a>
+        </h2>
+        <div class="dance-meta">
+          <span class="dance-formation">{{ dance.formation }}</span>
+          {% if dance.progression %}
+            <span class="meta-divider">·</span>
+            <span class="dance-progression">{{ dance.progression }}</span>
+          {% endif %}
+          {% if dance.author %}
+            <span class="meta-divider">·</span>
+            <span class="dance-author">by {{ dance.author }}</span>
+          {% endif %}
+        </div>
+        {% if dance.notes and dance.notes.length > 0 %}
+          <p class="dance-preview">{{ dance.notes[0] | truncate(120) }}</p>
+        {% endif %}
+      </article>
     {% endfor %}
-  </section>
-
-  {% if dance.notes %}
-    <section class="notes">
-      <h2>Notes</h2>
-      <ul>
-        {% for note in dance.notes %}
-          <li>{{ note }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
-
-  {% if dance.videos %}
-    <section class="videos">
-      <h2>Videos</h2>
-      <ul>
-        {% for video in dance.videos %}
-          <li>
-            <a href="{{ video.url }}" target="_blank" rel="noopener">
-              {{ video.label }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
-
-</article>
-
+  </div>
+</div>

@@ -1,41 +1,44 @@
 {
   "title": "On the Third Hand",
   "formation": "Duple Minor - Improper",
-  "progression": "Single",
+  "progression": "Single Progression",
   "figures": [
     {
-      "name": "A1",
-      "steps": [
+      "section": "A1",
+      "moves": [
         "In long lines, go forward and back",
         "Robins left hand chain to partner"
       ]
     },
     {
-      "name": "A2",
-      "steps": [
+      "section": "A2",
+      "moves": [
         "Robins pass left full hey"
       ]
     },
     {
-      "name": "B1",
-      "steps": [
+      "section": "B1",
+      "moves": [
         "Partner right shoulder round",
         "Partner swing"
       ]
     },
     {
-      "name": "B2",
-      "steps": [
-        "Robins allemand right 1 & 1/2",
+      "section": "B2",
+      "moves": [
+        "Robins allemande right 1 & 1/2",
         "Neighbor swing"
       ]
     }
   ],
-  "notes": "Written to be a simple dance with a robins left hand chain. Inspired in part by  \"On the Other Hand (It Works Well With Music)\" by Abigail Golden and Qwilleran Chapin Duvall",
+  "notes": [
+    "Written to be a simple dance with a robins left hand chain.",
+    "Inspired in part by  \"On the Other Hand (It Works Well With Music)\" by Abigail Golden and Qwilleran Chapin Duvall"
+    ],
   "videos": [
     {
-      "text": "Lake City Contra Dance (2025)",
-      "url": "https://youtu.be/example1"
+      "label": "Lake City Contra Dance (2025)",
+      "url": "https://youtu.be/5bz_HvK1blw?si=YSrKYRFE0MN0H-dh"
     }
   ]
 }

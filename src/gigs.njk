@@ -6,35 +6,104 @@ eleventyNavigation:
   order: 3
 ---
 
-<h1>Gigs</h1>
+<div class="gigs-page">
+  <h1>{{ title }}</h1>
 
-{% if gigs.upcoming.length %}
-  <h2>Upcoming</h2>
-
-  {% for gig in gigs.upcoming %}
-    <article class="gig">
-      <h3>{{ gig.series }}</h3>
-      <p class="meta">
-        {{ gig.date | date("MMMM d, yyyy") }} ·
-        {{ gig.location }} ·
-        {{ gig.band }}
-      </p>
-    </article>
-  {% endfor %}
-{% endif %}
-
-<h2>Past</h2>
-
-{% set currentYear = "" %}
-{% for gig in gigs.past %}
-  {% if gig.year != currentYear %}
-    <h3>{{ gig.year }}</h3>
-    {% set currentYear = gig.year %}
+  {% if gigs.upcoming.length %}
+    <section class="upcoming-gigs">
+      <h2>Upcoming Gigs</h2>
+      <div class="gig-list">
+        {% for gig in gigs.upcoming %}
+          <article class="gig-card">
+            <h3 class="gig-series">
+              {% if gig.series_url %}
+                <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
+                  {{ gig.series }}
+                </a>
+              {% else %}
+                {{ gig.series }}
+              {% endif %}
+            </h3>
+            <div class="gig-details">
+              <time class="gig-date" datetime="{{ gig.date }}">
+                {{ gig.date | date("EEEE, MMMM d, yyyy") }}
+              </time>
+              <span class="gig-location">{{ gig.location }}</span>
+              {% if gig.band %}
+                <span class="gig-band">
+                  with
+                  {% if gig.band_url %}
+                    <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                      {{ gig.band }}
+                    </a>
+                  {% else %}
+                    {{ gig.band }}
+                  {% endif %}
+                </span>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% else %}
+    <section class="upcoming-gigs">
+      <h2>Upcoming Gigs</h2>
+      <p>No upcoming gigs scheduled at the moment. Check back soon!</p>
+    </section>
   {% endif %}
 
-  <article class="gig">
-    <strong>{{ gig.series }}</strong>
-    — {{ gig.date | date("MMMM d") }}
-  </article>
-{% endfor %}
+  {% if gigs.previous.length %}
+    <section class="past-gigs">
+      <h2>Past Gigs</h2>
 
+      {% set currentYear = "" %}
+      {% for gig in gigs.previous %}
+        {% set gigYear = gig.date | date("yyyy") %}
+
+        {% if gigYear != currentYear %}
+          {% if currentYear != "" %}
+            </div> {# Close previous year's list #}
+          {% endif %}
+          <h3 class="year-heading">{{ gigYear }}</h3>
+          <div class="gig-list-compact">
+          {% set currentYear = gigYear %}
+        {% endif %}
+
+        <article class="gig-compact">
+          <time class="gig-date" datetime="{{ gig.date }}">
+            {{ gig.date | date("MMM d") }}
+          </time>
+          <span class="gig-divider">·</span>
+          <span class="gig-series">
+            {% if gig.series_url %}
+              <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
+                {{ gig.series }}
+              </a>
+            {% else %}
+              {{ gig.series }}
+            {% endif %}
+          </span>
+          <span class="gig-divider">·</span>
+          <span class="gig-location">{{ gig.location }}</span>
+          {% if gig.band %}
+            <span class="gig-divider">·</span>
+            <span class="gig-band">
+              {% if gig.band_url %}
+                <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
+                  {{ gig.band }}
+                </a>
+              {% else %}
+                {{ gig.band }}
+              {% endif %}
+            </span>
+          {% endif %}
+        </article>
+
+        {% if loop.last %}
+          </div> {# Close last year's list #}
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
+</div>
