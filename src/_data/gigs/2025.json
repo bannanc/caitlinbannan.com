@@ -2,8 +2,137 @@
   "year": 2025,
   "gigs": [
     {
+      "date": "2025-07-18",
+      "series": "Emerald City Contra Dance",
+      "series_url": "https://www.seattledance.org/contra/emeraldcity/",
+      "location": "Seattle, WA",
+      "band": "Snail Haven -- Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)",
+      "program": {
+        "break_after": 5,
+        "dances": [
+          {
+            "title": "Foxglove",
+            "author": "Tom Thoureau",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12734"
+          },
+          {
+            "title": "Tika Tika Timing",
+            "author": "Dean Snipes",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11680"
+          },
+          {
+            "title": "Solstice Special",
+            "author": "Tony Parkes",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1411"
+          },
+          {
+            "title": "32 Seconds",
+            "author": "Tom Calwell",
+            "url": "https://www.dancingthread.ca/condance.htm#seconds"
+          },
+          {
+            "title": "Read Between the Lines",
+            "author": "Bob Isaacs",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1869"
+          },
+          {
+            "title": "Devious",
+            "author": "Don Flaherty",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=5731"
+          },
+          {
+            "title": "The Second Time Around",
+            "author": "Jim Kitch",
+            "url": "https://www.jefftk.com/contras/dances/second"
+          },
+          {
+            "title": "Apples and Caramel",
+            "author": "Seth Tepfer",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17770"
+          },
+          {
+            "title": "Hi Honey, How was your Hey",
+            "author": "Bob Isaacs"
+          },
+          {
+            "title": "A-1 Reel",
+            "author": "Chris Weiler",
+            "url": "http://caller.chrisweiler.ws/dances.htm#a1reel"
+          }
+        ],
+        "notes": "Split the night, Ali Webb called the dances before the break, I called the second half."
+      }
+    },
+    {
+      "date": "2025-08-21",
+      "series": "Lake City Contra Dance",
+      "series_url": "https://www.seattledance.org/contra/lakecity/",
+      "location": "Seattle, WA",
+      "band": "Countercurrent",
+      "band_url": "https://countercurrentmusic.com/",
+      "program": {
+        "break_after": 6,
+        "dance": [
+          {
+            "title": "Simplicity Swing",
+            "author": "Becky Hill",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10732"
+          },
+          {
+            "title": "Saturday Night Line",
+            "author": "Joseph Pimentel",
+            "url": "https://contradb.com/dances/655"
+          },
+          {
+            "title": "The Erik Effect",
+            "author": "Ben Werner and Danielle Boudreau",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
+          },
+          {
+            "title": "Chinese New Year",
+            "author": "Chris Page",
+            "url": "http://chrispagecontra.awardspace.us/dances/index.htm#chinese-new-year",
+            "video": "https://youtu.be/TFNULLWf_2M?si=blZiZSbsLNlqEDr4"
+          },
+          {
+            "title": "And Another Thing",
+            "author": "Chris Page",
+            "url": "http://chrispagecontra.awardspace.us/dances/dlist2.htm#and-another-thing"
+          },
+          {
+            "title": "Mary Cay's Reel",
+            "author": "David Kaynor",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10579",
+            "video": "https://youtu.be/Pst_pPO-wDA?si=uDLJv3aSBINDlwSP"
+          },
+          {
+            "title": "Flurry 2020 Vision",
+            "author": "Committee Group",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=16512"
+          },
+          {
+            "title": "Winter in Summerland",
+            "author": "Jeff Spero and James Hutson",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10882"
+          },
+          {
+            "title": "Leftovers (Contra Connection)",
+            "author": "Ben Werner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12134"
+          },
+          {
+            "title": "On the Third Hand",
+            "author": "Caitlin Bannan",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=19085"
+          }
+        ],
+        "notes": "Split the night, I called the first half, Abigail Golden called everything after the break."
+      }
+    },
+    {
       "date": "2025-12-04",
       "series": "Lake City Contra Dance",
+      "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
       "band": "Beregovski's All Stars (Laurie Andres, Jimmy Austin, W.B. Reid, and Carl Shutoff)",
       "program": {
@@ -39,7 +168,7 @@
             "title":"Train Delay",
             "author": "Maia McCormick",
             "url": "https://contra.maiamccormick.com/dances.html#traindelay",
-            "video": "https://youtu.be/3XnNUj3rLbU?si=3XXbZETx0VqODZOy",
+            "video": "https://youtu.be/3XnNUj3rLbU?si=3XXbZETx0VqODZOy"
           },
           {
             "title": "The Carousel",

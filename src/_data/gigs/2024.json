@@ -121,7 +121,7 @@
       "series": "Santa Fe Contra Dance",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
-      "band": "Santa Fe Mega Band",
+      "band": "Santa Fe Megaband",
       "program": {
         "break_after": 6,
         "dances": [
@@ -179,7 +179,151 @@
       "program": {
         "break_after": 6,
         "dances": [
-
+          {
+            "title": "The Nice Combination",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1"
+          },
+          {
+            "title": "Contracordians Mixer",
+            "author": "Jan Larsen",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=7510"
+          },
+          {
+            "title": "I'll Hold You In My Arms",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#illholdyouinmyarms"
+          },
+          {
+            "title": "The Erik Effect",
+            "author": "Ben Werner and Danielle Boudreau",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
+          },
+          {
+            "title": "Rick and Sara's Reel",
+            "author": "Ted Hodapp",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1096"
+          },
+          {
+            "title": "United We Dance",
+            "author": "Bob Isaacs",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10851"
+          },
+          {
+            "title": "Rock Creek Reel",
+            "author": "David Harris",
+            "url": "https://contradb.com/dances/426"
+          },
+          {
+            "Medley": [
+              {
+                "title": "Accretion Reel",
+                "author": "Chris Page",
+                "url": "http://chrispagecontra.awardspace.us/dances/index.htm#accretion-reel"
+              },
+              {
+                "title": "Petronella Milkshake",
+                "author": "Deanna Rubin",
+                "url": "https://contradb.com/dances/905"
+              }
+            ]
+          },
+          {
+            "title": "2nd Hannover Triplet",
+            "author": "Heiner Fischle",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=6536"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "series": "Albuquerque Folk Festival - Contra Dance Workshop",
+      "series_url": "https://abqfolkfest.org/index.shtml",
+      "location": "Albuquerque, NM",
+      "band": "Albuquerque Megaband",
+      "program": {
+        "dances": [
+          {
+            "title": "La Bastringue",
+            "author": "Traditional",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10543"
+          },
+          {
+            "title": "(New World) Festival Reel",
+            "author": "Will Mentor",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15807"
+          },
+          {
+            "title": "Tika Tika Timing",
+            "author": "Dean Snipes",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11680"
+          },
+          {
+            "title": "The Nice Combination",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1"
+          }
+        ],
+        "notes": "Albuquerque Folk Festival is a family friendly event highlighting all sorts of different folk traditions. There is no beginner lesson and the dances need to be approachable to any attendee."
+      }
+    },
+    {
+      "date": "2024-11-23",
+      "series": "Santa Fe Contra Dance",
+      "series_url": "https://folkmads.org/",
+      "location": "Santa Fe, NM",
+      "band": "Santa Fe Megaband",
+      "program": {
+        "break_after": 5,
+        "dances": [
+          {
+            "title": "The Baby Rose",
+            "author": "David Kaynor",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10273"
+          },
+          {
+            "title": "Back to Back",
+            "author": "Isaac Banner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18298"
+          },
+          {
+            "title": "La Bastringue",
+            "author": "Traditional",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10543"
+          },
+          {
+            "title": "The Nice Combination",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1"
+          },
+          {
+            "title": "Delphiniums and Daisies",
+            "author": "Tanya Rotenberg",
+            "url": "https://contradb.com/dances/354"
+          },
+          {
+            "title": "Blackbird in the Night",
+            "author": "Don Flaherty",
+            "url": "https://contradb.com/dances/1151"
+          },
+          {
+            "title": "On the Third Hand",
+            "author": "Caitlin Bannan",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=19085"
+          },
+          {
+            "title": "The Boys from Urbana",
+            "author": "John Coffman",
+            "url": "https://sites.google.com/site/capecontradance/cape-girardeau-mo-contra-dance/contra-dances-by-john-coffman"
+          },
+          {
+            "title": "Folklife Frolic",
+            "author": "Lindsey Dono",
+            "url": "https://lindseydono.com/2015/12/29/choreography/"
+          }
+        ]
+      }
     }
   ]
 }
