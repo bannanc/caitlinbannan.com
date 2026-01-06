@@ -133,6 +133,9 @@ eleventyNavigation:
                   {% endif %}
                 {% endfor %}
               </ol>
+            {% if gig.program.notes %}
+              <p class="program-notes">{{ gig.program.notes }}</p>
+            {% endif %}
             </div>
           {% endif %}
         </article>
