@@ -188,6 +188,40 @@
         text-align: center;
       }
     }
+
+    .medley-list {
+      margin: 0.5rem 0 0 1.5rem;
+      padding: 0;
+      list-style-type: none;
+
+      .medley-item {
+        margin: 0.25rem 0;
+        padding-left: 1rem;
+        position: relative;
+
+        &:before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: #999;
+        }
+
+        a {
+          color: #2c5f9e;
+          text-decoration: underline;
+
+          &:hover {
+            color: #1a3a5c;
+          }
+        }
+
+        .dance-video-link {
+          margin-left: 0.5rem;
+          font-size: 0.9em;
+          font-style: italic;
+        }
+      }
+    }
   }
 
   a {

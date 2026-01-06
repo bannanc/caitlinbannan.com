@@ -114,18 +114,43 @@ eleventyNavigation:
               <ol class="dance-program-list">
                 {% for dance in gig.program.dances %}
                   <li class="program-dance">
-                    {% if dance.url %}
-                      <a href="{{ dance.url }}" target="_blank" rel="noopener">
-                        <strong>{{ dance.title }}</strong>
-                      </a>
+                    {# Check if this is a medley #}
+                    {% if dance.medley %}
+                      <strong>Medley:</strong>
+                      <ul class="medley-list">
+                        {% for medleyDance in dance.medley %}
+                          <li class="medley-item">
+                            {% if medleyDance.url %}
+                              <a href="{{ medleyDance.url }}" target="_blank" rel="noopener">
+                                <strong>{{ medleyDance.title }}</strong>
+                              </a>
+                            {% else %}
+                              <strong>{{ medleyDance.title }}</strong>
+                            {% endif %}
+                            {% if medleyDance.author %} by {{ medleyDance.author }}{% endif %}
+                            {% if medleyDance.video %}
+                              <a href="{{ medleyDance.video }}" target="_blank" rel="noopener" class="dance-video-link">
+                                (video)
+                              </a>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
                     {% else %}
-                      <strong>{{ dance.title }}</strong>
-                    {% endif %}
-                    {% if dance.author %} by {{ dance.author }}{% endif %}
-                    {% if dance.video %}
-                      <a href="{{ dance.video }}" target="_blank" rel="noopener" class="dance-video-link">
-                        (video)
-                      </a>
+                      {# Single dance #}
+                      {% if dance.url %}
+                        <a href="{{ dance.url }}" target="_blank" rel="noopener">
+                          <strong>{{ dance.title }}</strong>
+                        </a>
+                      {% else %}
+                        <strong>{{ dance.title }}</strong>
+                      {% endif %}
+                      {% if dance.author %} by {{ dance.author }}{% endif %}
+                      {% if dance.video %}
+                        <a href="{{ dance.video }}" target="_blank" rel="noopener" class="dance-video-link">
+                          (video)
+                        </a>
+                      {% endif %}
                     {% endif %}
                   </li>
                   {% if gig.program.break_after and loop.index == gig.program.break_after %}
@@ -133,9 +158,6 @@ eleventyNavigation:
                   {% endif %}
                 {% endfor %}
               </ol>
-            {% if gig.program.notes %}
-              <p class="program-notes">{{ gig.program.notes }}</p>
-            {% endif %}
             </div>
           {% endif %}
         </article>
