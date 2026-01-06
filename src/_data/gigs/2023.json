@@ -1,0 +1,127 @@
+{
+  "year": 2023,
+  "gigs": [
+    {
+      "data": "2023-05-06",
+      "series": "Albuquerque Contra Dance",
+      "series_url":"https://folkmads.org/",
+      "location": "Albuquerque, NM",
+      "band": "Albuquerque Mega Band",
+      "program": {
+        "dances": [
+          {
+            "title": "Hypnosis",
+            "author": "Melanie Axel-Lute",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10507"
+          },
+          {
+            "title": "Wrinkled Ribbon",
+            "author": "Melanie Axel-Lute",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1184"
+          },
+          {
+            "title": "Tika Tika Timing",
+            "author": "Dean Snipes",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11680"
+          }
+        ],
+        "notes": "First public night calling split with Ben Werner and Tristan Fin."
+      }
+    },
+    {
+      "date": "2023-07-08",
+      "series": "Santa Fe Contra Dance",
+      "series_url": "https://folkmads.org/",
+      "location": "Santa Fe, NM",
+      "band": "Santa Fe Mega Band",
+      "program": {
+        "dances": [
+          {
+            "title": "Thanks to the Gene",
+            "author": "Tom Hinds",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10811"
+          },
+          {
+            "title": "Travels with Rick and Kim",
+            "author": "Shari Miller-Johnson",
+            "url": "https://contradb.com/dances/455"
+          },
+          {
+            "title": "Meshach's March",
+            "author": "Tony Parkes"
+          },
+          {
+            "title": "Neighbor, Neighbor On the Wall",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#neighborneighboronthewall"
+          }
+        ],
+        "notes": "Open caller night in Santa Fe."
+      }
+    },
+    {
+      "date": "2023-12-02",
+      "series": "Albuquerque Contra Dance",
+      "series_url":"https://folkmads.org/",
+      "location": "Albuquerque, NM",
+      "band": "Cheap Shots",
+      "band_url": "https://mycheapshots.com/home/",
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Airpants",
+            "author": "Lisa Greenleaf",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4577"
+          },
+          {
+            "title": "Old Time Elixir #2",
+            "author": "Linda Leslie",
+            "url": "https://lindalesliecaller.contracorner.com/dances/duple-minor-contras.html"
+          },
+          {
+            "title": "Rainbow Snake",
+            "author": "Jan Larsen",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=7491"
+          },
+          {
+            "title": "Rock Creek Reel",
+            "author": "David Harris",
+            "url": "https://contradb.com/dances/426"
+          },
+          {
+            "title": "Leftovers (Contra Connection)",
+            "author": "Ben Werner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12134"
+          },
+          {
+            "title":"Train Delay",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#traindelay"
+          },
+          {
+            "title": "A-1 Reel",
+            "author": "Chris Weiler",
+            "url": "http://caller.chrisweiler.ws/dances.htm#a1reel"
+          },
+          {
+            "title": "Apples and Chocolate",
+            "author": "Sue Rosen",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10266"
+          },
+          {
+            "title": "Columbia Contra",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=5366"
+          },
+          {
+            "title": "Neighbor, Neighbor On the Wall",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#neighborneighboronthewall"
+          }
+        ]
+      }
+    }
+  ]
+}
+

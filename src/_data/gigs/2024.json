@@ -1,0 +1,186 @@
+{
+  "year": 2024,
+  "gigs": [
+    {
+      "date": "2024-01-06",
+      "series": "Albuquerque Contra Dance",
+      "location": "Albuquerque, NM",
+      "series_url":"https://folkmads.org/",
+      "band": "Adobe Brothers",
+      "band_url": "https://www.facebook.com/AdobeBrothers/",
+      "program": {
+        "break_after": 5,
+        "dances": [
+          {
+            "title": "Get Me Going",
+            "author": "Lisa Greenleaf",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4455"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10708"
+          },
+          {
+            "title": "The Zen of Dance",
+            "author": "Chris Page",
+            "url": "http://chrispagecontra.awardspace.us/dances/dlist2.htm#the-zen-of-dance"
+          },
+          {
+            "title": "Meshach's March",
+            "author": "Tony Parkes"
+          },
+          {
+            "title": "Mary Cay's Reel",
+            "author": "David Kaynor",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10579"
+          },
+          {
+            "title": "Berkeley Bind",
+            "author": "Erik Hoffman",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=2594"
+          },
+          {
+            "title": "Homeward Bound",
+            "author": "Andrea Nettleton",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4360"
+          },
+          {
+            "title": "Butter",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10320"
+          },
+          {
+            "title": "Square Affair",
+            "author": "Becky Hill",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10758"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2024-03-01",
+      "series": "Albuquerque Contra Dance",
+      "location": "Albuquerque, NM",
+      "series_url":"https://folkmads.org/",
+      "band": "The Parson Sisters",
+      "band_url": "https://theparsonsisters.com/",
+      "program": {
+        "break_after": 5,
+        "dances": [
+          {
+            "title": "Easy Peasy",
+            "author": "Diane Silver",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10029"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10708"
+          },
+          {
+            "title": "Training Wheels",
+            "author": "Yoyo Zhou",
+            "url": "https://epicyclic.org/dance/compositions.html#ding"
+          },
+          {
+            "title": "Blackbird in the Night",
+            "author": "Don Flaherty",
+            "url": "https://contradb.com/dances/1151"
+          },
+          {
+            "title": "Delphiniums and Daisies",
+            "author": "Tanya Rotenberg",
+            "url": "https://contradb.com/dances/354"
+          },
+          {
+            "title": "Neighbor, Neighbor On the Wall",
+            "author": "Maia McCormick",
+            "url": "https://contra.maiamccormick.com/dances.html#neighborneighboronthewall"
+          },
+          {
+            "title": "The 24th of May",
+            "author": "Yoyo Zhou",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15057"
+          },
+          {
+            "title": "The Boys from Urbana",
+            "author": "John Coffman",
+            "url": "https://sites.google.com/site/capecontradance/cape-girardeau-mo-contra-dance/contra-dances-by-john-coffman"
+          },
+          {
+            "title": "A-1 Reel",
+            "author": "Chris Weiler",
+            "url": "http://caller.chrisweiler.ws/dances.htm#a1reel"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2024-03-24",
+      "series": "Santa Fe Contra Dance",
+      "series_url": "https://folkmads.org/",
+      "location": "Santa Fe, NM",
+      "band": "Santa Fe Mega Band",
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Airpants",
+            "author": "Lisa Greenleaf",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4577"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10708"
+          },
+          {
+            "title": "Butter",
+            "author": "Gene Hubert",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10320"
+          },
+          {
+            "title": "Training Wheels",
+            "author": "Yoyo Zhou",
+            "url": "https://epicyclic.org/dance/compositions.html#ding"
+          },
+          {
+            "title": "Blackbird in the Night",
+            "author": "Don Flaherty",
+            "url": "https://contradb.com/dances/1151"
+          },
+          {
+            "title": "A-1 Reel",
+            "author": "Chris Weiler",
+            "url": "http://caller.chrisweiler.ws/dances.htm#a1reel"
+          },
+          {
+            "title": "I Think I Can",
+            "author": "Barry Dupen",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14850"
+          },
+          {
+            "title": "Right and Left Triplet",
+            "author": "Chris Page",
+            "url": "http://chrispagecontra.awardspace.us/dances/dlist2.htm#right-and-left-triplet"
+          }
+        ],
+        "notes": "Many dancers left after the break leaving us with mixers and a triplet in the second half."
+      }
+    },
+    {
+      "date": "2024-07-12",
+      "series": "Santa Fe Contra Dance",
+      "series_url": "https://folkmads.org/",
+      "location": "Santa Fe, NM",
+      "band": "Turquoise Tuners",
+      "band_url": "https://sites.google.com/view/the-turquoise-tuners/home/",
+      "program": {
+        "break_after": 6,
+        "dances": [
+
+    }
+  ]
+}
+
