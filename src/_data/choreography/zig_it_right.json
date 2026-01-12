@@ -1,0 +1,41 @@
+{
+  "title": "Zig it Right",
+  "formation": "Duple Minor - Becket",
+  "progression": "Single Progression",
+  "figures": [
+    {
+      "section": "A1",
+      "moves": [
+        "Left diagonal, give and take with new neighbors to the larks side",
+        "Neighbor swing"
+      ]
+    },
+    {
+      "section": "A2",
+      "moves": [
+        "long line forward and back",
+        "robins chain to your partner"
+      ]
+    },
+    {
+      "section": "B1",
+      "moves": [
+        "Circle right 4/4 (drop hands with your partner)",
+        "Zag to the right, zig to the left",
+        "shadow allemande Right 1x"
+      ]
+    },
+    {
+      "section": "B2",
+      "moves": [
+        "Partner Balance and Swing"
+      ]
+    }
+  ],
+  "notes": [
+    "Inspired by 'Zag it Back' by Jacqui Grennan.",
+    "I love the combinations of circling right after curtesy turns.",
+    "Full disclosure - haven't had a chance to call this to music yet, I think the B1 will be quite quick.",
+    "leaving off the balance before the partner swing to give folks time to come out of the allemande could be a good alternative."
+  ]
+}
