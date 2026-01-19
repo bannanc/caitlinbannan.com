@@ -1,5 +1,6 @@
-// Gigs Page Styles
-.gigs-page {
+// Shared Page Styles for Gigs and Choreography
+.gigs-page,
+.choreography-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -13,18 +14,24 @@
     margin-bottom: 1.5rem;
     font-size: 1.75rem;
   }
+
+  .intro {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: #666;
+  }
 }
 
-.upcoming-gigs {
-  margin-bottom: 4rem;
-}
-
-.gig-list {
+// Shared Card List Styles
+.gig-list,
+.dance-list {
   display: grid;
   gap: 1.5rem;
 }
 
-.gig-card {
+// Shared Card Styles
+.gig-card,
+.dance-card {
   padding: 1.5rem;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -34,7 +41,10 @@
   &:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+}
 
+// Gig-specific styles
+.gig-card {
   .gig-series {
     margin: 0 0 0.75rem 0;
     font-size: 1.5rem;
@@ -72,6 +82,42 @@
   }
 }
 
+// Dance-specific styles
+.dance-card {
+  .dance-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .dance-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #666;
+
+    .meta-divider {
+      color: #999;
+    }
+  }
+
+  .dance-preview {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+  }
+}
+
+// Past Gigs Section
 .past-gigs {
   .year-heading {
     margin-top: 2rem;
@@ -156,6 +202,12 @@
       font-weight: 700;
     }
 
+    .program-notes {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #666;
+    }
+
     .dance-program-list {
       margin: 0;
       padding-left: 1.5rem;
@@ -187,38 +239,14 @@
         list-style: none;
         text-align: center;
       }
-    }
 
-    .medley-list {
-      margin: 0.5rem 0 0 1.5rem;
-      padding: 0;
-      list-style-type: none;
+      .medley-list {
+        margin-top: 0.5rem;
+        padding-left: 1.5rem;
+        list-style-type: disc;
 
-      .medley-item {
-        margin: 0.25rem 0;
-        padding-left: 1rem;
-        position: relative;
-
-        &:before {
-          content: "→";
-          position: absolute;
-          left: 0;
-          color: #999;
-        }
-
-        a {
-          color: #2c5f9e;
-          text-decoration: underline;
-
-          &:hover {
-            color: #1a3a5c;
-          }
-        }
-
-        .dance-video-link {
-          margin-left: 0.5rem;
-          font-size: 0.9em;
-          font-style: italic;
+        .medley-item {
+          margin: 0.25rem 0;
         }
       }
     }
@@ -231,81 +259,6 @@
     &:hover {
       color: #000;
     }
-  }
-}
-
-// Choreography Page Styles
-.choreography-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-
-  h1 {
-    margin-bottom: 1rem;
-  }
-
-  .intro {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    color: #666;
-  }
-}
-
-.dance-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-.dance-list {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.dance-card {
-  padding: 1.5rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  .dance-title {
-    margin: 0 0 0.75rem 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .dance-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-    color: #666;
-
-    .meta-divider {
-      color: #999;
-    }
-  }
-
-  .dance-preview {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
   }
 }
 
@@ -426,10 +379,6 @@
 
 // Responsive adjustments
 @media (max-width: 768px) {
-  .dance-grid {
-    grid-template-columns: 1fr;
-  }
-
   .gig-compact .gig-summary {
     flex-direction: column;
     align-items: flex-start;
