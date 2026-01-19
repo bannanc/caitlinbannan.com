@@ -1,10 +1,11 @@
-// Shared Page Styles for Gigs and Choreography
+// Shared Page Styles for Gigs, Choreography, and About
 .gigs-page,
 .choreography-page,
 .about-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  position: relative;
 
   h1 {
     margin-bottom: 2rem;
@@ -19,6 +20,47 @@
   .intro {
     margin-bottom: 2rem;
     color: #666;
+  }
+}
+
+// Background square for about page
+.about-page__bg-square {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: -50px;
+    bottom: auto;
+    width: 450px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: var(--color-bg-accent);
+    z-index: -1;
+
+    :root[data-theme="dark"] & {
+      background-color: var(--color-bg-accent-dark);
+    }
+  }
+}
+
+// Contact section styling
+.contact-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f0f8f8;
+  border-radius: 12px;
+  border: 1px solid #d0e8e8;
+
+  :root[data-theme="dark"] & {
+    background-color: rgba(77, 184, 184, 0.1);
+    border-color: rgba(77, 184, 184, 0.3);
+  }
+
+  h2 {
+    margin-top: 0;
   }
 }
 
