@@ -5,19 +5,29 @@ eleventyNavigation:
   key: About
   order: 4
 ---
+<div class="home-page">
+  <div class="home-page__bg-square"></div>
 
-<section class="about-page">
-  <div class="about-page__bg-square"></div>
+  {# Hero section #}
+  <section class="hero">
+    <div class="hero__col">
+      <h1 class="hero__title gradient-text">{{ home.about_title }}</h1>
+    </div>
+    <div class="hero__col">
+      {% image
+        home.about_image,
+        home.about_image_alt,
+        "(min-width: 1024px) 50vw, 100vw",
+        "hero__image shadow",
+        "eager"
+      %}
+    </div>
+  </section>
 
-  <h1>About Me</h1>
-
-  {% image
-    "src/assets/img/dancing1.png",
-    "Caitlin Bannan contra dancing",
-    "(min-width: 768px) 50vw, 100vw",
-    "shadow"
-  %}
-
+<section class="about-section">
+  <p>
+  <br>
+  </p>
   <p>
     Hi! I'm Caitlin. I'm a contra dance caller based in Seattle, WA.
     I have always been a dancer, I started ballet at about 6 years old and continued performance dance styles in ballet, modern, and jazz through college.
@@ -37,6 +47,7 @@ eleventyNavigation:
     I have begun to dabble in contra choreography.
     So far, I have been mostly inspired to make approachable dances with moves we don't see as often at a regular dance night.
   </p>
+</section>
 
   <section class="contact-section">
     <h2>Contact</h2>

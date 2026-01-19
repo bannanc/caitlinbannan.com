@@ -2,5 +2,8 @@
   "title": "Caitlin Bannan",
   "image": "src/assets/img/headshot1.png",
   "image_alt": "Caller Headshot",
-  "body": "I am a contra and community folk dance caller based in Seattle, WA."
+  "body": "I am a contra and community folk dance caller based in Seattle, WA.",
+  "about_title": "About Me",
+  "about_image": "src/assets/img/dancing1.png",
+  "about_image_alt": "Dancing Pic"
 }
