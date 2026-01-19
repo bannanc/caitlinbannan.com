@@ -17,7 +17,6 @@
 
   .intro {
     margin-bottom: 2rem;
-    font-size: 1.125rem;
     color: #666;
   }
 }
@@ -49,6 +48,11 @@
     margin: 0 0 0.75rem 0;
     font-size: 1.5rem;
     font-weight: 700;
+    color: #4db8b8;
+
+    :root[data-theme="dark"] & {
+      color: #5ecece;
+    }
 
     a {
       color: inherit;
@@ -88,6 +92,11 @@
     margin: 0 0 0.75rem 0;
     font-size: 1.5rem;
     font-weight: 700;
+    color: #4db8b8;
+
+    :root[data-theme="dark"] & {
+      color: #5ecece;
+    }
 
     a {
       color: inherit;
@@ -103,10 +112,18 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 0.75rem;
     color: #666;
 
+    .dance-formation,
+    .dance-progression,
+    .dance-author {
+      font-weight: 600;
+      color: #333;
+    }
+
     .meta-divider {
-      color: #999;
+      display: none;
     }
   }
 
