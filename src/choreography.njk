@@ -8,9 +8,14 @@ eleventyNavigation:
 
 <div class="choreography-page">
   <h1>{{ title }}</h1>
-  <p class="intro">A collection of contra dances I call regularly.</p>
+  <p class="intro">
+  I dabble in contra choreography.
+  Most dances I write its because there is a hook or move that I want to
+  call, but I could not find a dance that meets that audience's needs.
+  </p>
 
-  <div class="dance-grid">
+
+  <div class="dance-list">
     {% for dance in choreography %}
       <article class="dance-card">
         <h2 class="dance-title">
@@ -35,4 +40,10 @@ eleventyNavigation:
       </article>
     {% endfor %}
   </div>
+  <p class="intro">
+  Consider any of these dances as in the public domain.
+  Dances in our tradition don't exist without the communities
+  that dance them, I believe contra choreography belongs to the whole community.
+  Someday I'll write a blog post to share more thoughts on the topic.
+</p>
 </div>

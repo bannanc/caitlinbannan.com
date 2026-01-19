@@ -30,7 +30,8 @@ for (const file of gigFiles) {
 
 // Convert date strings to JS Date objects
 allGigs.forEach(gig => {
-    gig.dateObj = new Date(gig.date);
+    // Parse date as UTC to avoid timezone issues
+    gig.dateObj = new Date(gig.date + 'T00:00:00Z');
 });
 
 // Today's date (set to start of day for accurate comparison)

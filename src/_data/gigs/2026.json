@@ -4,6 +4,7 @@
     {
       "date": "2026-02-20",
       "series": "Emerald City Contra",
+      "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
       "band": "Steve Blum-Anderson, Brad Reynolds, and Jay Finkelstein",
       "program": {}
@@ -11,9 +12,19 @@
     {
       "date": "2026-03-28",
       "series": "Olympia Contra Dance",
+      "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
       "band": "Riffraff",
-      "program": {}}
+      "program": {}
+    },
+    {
+    "date":"2026-05-16",
+    "series": "Corvallis Folklore Society",
+    "series_url": "https://corvallisfolklore.org/home/contradancing/",
+    "location": "Corvallis, OR",
+    "band": "TBA",
+    "program": {}
+  }
   ]
 }
 
