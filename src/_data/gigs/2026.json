@@ -7,16 +7,9 @@
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
       "band": "Fortified -- Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)",
-      "program": {}
-    },
-    {
-      "date": "2026-03-28",
-      "series": "Olympia Contra Dance",
-      "series_url": "https://oly-wa.us/southbaygrange/contra.php",
-      "location": "Olympia, WA",
-      "band": "Riffraff",
       "program": {
         "break_after": 6,
+        "notes": "Marshall Gould did 2 guest caller slots. He called dances 3 and 4.",
         "dances": [
           {
             "title": "Get Me Going",
@@ -29,12 +22,12 @@
             "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18298"
           },
           {
-            "title": "(Marshall Gould called) The Erik Effect",
+            "title": "The Erik Effect",
             "author": "Ben Werner and Danielle Boudreau",
             "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
           },
           {
-            "title": "(Marshall Gould called) Friday at the Fool",
+            "title": "Friday at the Fool",
             "author": "Seth Tepfer",
             "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11953"
           },
@@ -70,6 +63,14 @@
           }
         ]
       }
+    },
+    {
+      "date": "2026-03-28",
+      "series": "Olympia Contra Dance",
+      "series_url": "https://oly-wa.us/southbaygrange/contra.php",
+      "location": "Olympia, WA",
+      "band": "Riffraff",
+      "program": {}
     },
     {
     "date":"2026-05-16",

@@ -72,6 +72,7 @@
       "band_url": "https://countercurrentmusic.com/",
       "program": {
         "break_after": 6,
+        "notes": "Split the night, I called the first half, Abigail Golden called everything after the break.",
         "dances": [
           {
             "title": "Simplicity Swing",
@@ -125,8 +126,7 @@
             "author": "Caitlin Bannan",
             "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=19085"
           }
-        ],
-        "notes": "Split the night, I called the first half, Abigail Golden called everything after the break."
+        ]
       }
     },
     {
