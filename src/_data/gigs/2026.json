@@ -6,7 +6,7 @@
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Steve Blum-Anderson, Brad Reynolds, and Jay Finkelstein",
+      "band": "Fortified -- Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)",
       "program": {}
     },
     {
@@ -15,7 +15,61 @@
       "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
       "band": "Riffraff",
-      "program": {}
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Get Me Going",
+            "author": "Lisa Greenleaf",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4455"
+          },
+          {
+            "title": "Back to Back Variation",
+            "author": "Isaac Banner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18298"
+          },
+          {
+            "title": "(Marshall Gould called) The Erik Effect",
+            "author": "Ben Werner and Danielle Boudreau",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
+          },
+          {
+            "title": "(Marshall Gould called) Friday at the Fool",
+            "author": "Seth Tepfer",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11953"
+          },
+          {
+            "title": "Diana's Delight",
+            "author": "Yoyo Zhou",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14126"
+          },
+          {
+            "title": "Charismatic Megafauna",
+            "author": "Linda Leslie",
+            "url": "https://contradb.com/dances/1950"
+          },
+          {
+            "title": "Rory O'Most",
+            "author": "Isaac Banner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17848"
+          },
+          {
+            "title": "Tangled Yarns",
+            "author": "Isaac Banner",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18623"
+          },
+          {
+            "title": "Cupid's Clout",
+            "author": "Susan Petrick",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14495"
+          },
+          {
+            "title": "And Thinking about Coffee Cups Variant",
+            "author": "Michael Furst",
+            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15936"
+          }
+        ]
+      }
     },
     {
     "date":"2026-05-16",
