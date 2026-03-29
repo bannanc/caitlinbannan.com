@@ -69,17 +69,72 @@
       "series": "Olympia Contra Dance",
       "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
-      "band": "Riffraff",
+      "band": "Riffraff -- Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)",
+      "program": {
+        "break_after": 5,
+        "dances": [
+          {
+            "title": "Easy Peasy",
+            "author": "Diana Silver"
+          },
+          {
+            "title": "Easy Street",
+            "author": "Bob Isaacs"},
+          {
+            "title": "I'll Hold You in My Arms",
+            "author": "Maia McCormick"
+          },
+          {
+            "title": "Columbia Contra",
+            "author": "Gene Hubert"
+          },
+          {
+            "title": "Pizza Shop",
+            "author": "Yoyo Zhou"
+          },
+          {
+            "title": "Neighbor, Neighbor on the Wall",
+            "author": "Maia McCormick"
+          },
+          {
+            "title": "Zig it Right",
+            "author": "Caitlin Bannan"
+          },
+          {
+            "title": "Love and Twirls",
+            "author": "James Hutson"
+          },
+          {
+            "title": "Hume Foggg Reel",
+            "author": "Susan Kevra"
+          }
+        ]
+      }
+    },
+    {
+      "date":"2026-05-16",
+      "series": "Corvallis Folklore Society",
+      "series_url": "https://corvallisfolklore.org/home/contradancing/",
+      "location": "Corvallis, OR",
+      "band": "TBA",
       "program": {}
     },
     {
-    "date":"2026-05-16",
-    "series": "Corvallis Folklore Society",
-    "series_url": "https://corvallisfolklore.org/home/contradancing/",
-    "location": "Corvallis, OR",
-    "band": "TBA",
-    "program": {}
-  }
+      "date":"2026-09-19",
+      "series": "Ottawa Contra Dance",
+      "series_url": "https://ottawacontra.ca/",
+      "location": "Ottawa, Ontario, Canada",
+      "band": "TBA",
+      "program": {}
+    },
+    {
+      "date":"2026-11-28",
+      "series": "Portland Country Dance Community",
+      "series_url": "https://portlandcountrydance.org/",
+      "location": "Portland, OR",
+      "band": "TBA",
+      "program": {}
+    }
   ]
 }
 
