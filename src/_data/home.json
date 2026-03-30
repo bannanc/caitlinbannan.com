@@ -1,9 +1,18 @@
 {
   "title": "Caitlin Bannan",
-  "image": "src/assets/img/headshot1.png",
-  "image_alt": "Caller Headshot",
-  "body": "I am a contra and community folk dance caller based in Seattle, WA.",
-  "about_title": "About Me",
-  "about_image": "src/assets/img/dancing1.png",
-  "about_image_alt": "Dancing Pic"
+  "image": "src/assets/img/hero-dance.jpg",
+  "image_alt": "Caitlin Bannan calling a contra dance",
+  "body": "Calling lively, welcoming contra dances across the Pacific Northwest and beyond.",
+  "videos": [
+    {
+      "youtube_id": "5bz_HvK1blw",
+      "title": "On the Third Hand",
+      "event": "Lake City Contra Dance, 2025"
+    },
+    {
+      "youtube_id": "QW8iY2yQAxk",
+      "title": "All the Way Over & All the Way Back",
+      "event": "Lake City Contra Dance, 2025"
+    }
+  ]
 }
