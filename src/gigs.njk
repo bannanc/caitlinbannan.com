@@ -3,172 +3,74 @@ title: Gigs
 layout: layouts/base.njk
 eleventyNavigation:
   key: Gigs
-  order: 3
+  order: 2
 ---
 
-<div class="gigs-page">
-  <h1>{{ title }}</h1>
+{# ---- Page header ---- #}
+<div class="page-header">
+  <div class="page-header__inner">
+    <p class="page-header__eyebrow">Schedule</p>
+    <h1 class="page-header__title">Upcoming Gigs</h1>
+    <p class="page-header__subtitle">Come dance! Use the links to find details about the event.</p>
+  </div>
+</div>
 
-  {% if gigs.upcoming.length %}
-    <section class="upcoming-gigs">
-      <h2>Upcoming Gigs</h2>
-      <div class="gig-list">
+{# ---- Upcoming gig cards ---- #}
+<section class="section-neutral">
+  <div class="upcoming-gigs__inner">
+
+    {% if gigs.upcoming.length %}
+      <div class="upcoming-gig-cards">
         {% for gig in gigs.upcoming %}
-          <article class="gig-card">
-            <h3 class="gig-series">
+          <article class="upcoming-gig-card">
+            <p class="upcoming-gig-card__month">
+              {{ gig.date | date("MMM yyyy") }}
+            </p>
+            <p class="upcoming-gig-card__date">
+              {{ gig.date | date("EEE, MMM d") }}
+            </p>
+            <div>
               {% if gig.series_url %}
-                <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
-                  {{ gig.series }}
-                </a>
+                <a
+                  class="upcoming-gig-card__org"
+                  href="{{ gig.series_url }}"
+                  target="_blank"
+                  rel="noopener"
+                >{{ gig.series }} ↗</a>
               {% else %}
-                {{ gig.series }}
+                <p class="upcoming-gig-card__org--no-link">{{ gig.series }}</p>
               {% endif %}
-            </h3>
-            <div class="gig-details">
-              <time class="gig-date" datetime="{{ gig.date }}">
-                {{ gig.date | date("EEEE, MMMM d, yyyy") }}
-              </time>
-              <span class="gig-location">{{ gig.location }}</span>
-              {% if gig.band %}
-                <span class="gig-band">
-                  with
-                  {% if gig.band_url %}
-                    <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
-                      {{ gig.band }}
-                    </a>
-                  {% else %}
-                    {{ gig.band }}
-                  {% endif %}
-                </span>
-              {% endif %}
+              <p class="upcoming-gig-card__location">{{ gig.location }}</p>
             </div>
+            {% if gig.band %}
+              <div>
+                <p class="upcoming-gig-card__band">{{ gig.band }}</p>
+                {% if gig.band_members %}
+                  <p class="upcoming-gig-card__band-members">{{ gig.band_members }}</p>
+                {% endif %}
+              </div>
+            {% else %}
+              <p class="upcoming-gig-card__tba">Band TBA</p>
+            {% endif %}
           </article>
         {% endfor %}
       </div>
-    </section>
-  {% else %}
-    <section class="upcoming-gigs">
-      <h2>Upcoming Gigs</h2>
-      <p>No upcoming gigs scheduled at the moment. Check back soon!</p>
-    </section>
-  {% endif %}
 
-  {% if gigs.previous.length %}
-    <section class="past-gigs">
-      <h2>Past Gigs</h2>
+    {% else %}
+      <p class="upcoming-gigs__empty">No upcoming gigs at the moment — check back soon!</p>
+    {% endif %}
 
-      {% set currentYear = "" %}
-      {% for gig in gigs.previous %}
-        {% set gigYear = gig.date | date("yyyy") %}
+    {# Link to archive #}
+    {% if gigs.previous.length %}
+      <div class="archive-link-row">
+        <a class="archive-link-row__link" href="{{ '/gigs/previous/' | url }}">
+          Browse past programs →
+        </a>
+        <span class="archive-link-row__count">
+          {{ gigs.previous.length }} previous gig{% if gigs.previous.length != 1 %}s{% endif %}
+        </span>
+      </div>
+    {% endif %}
 
-        {% if gigYear != currentYear %}
-          {% if currentYear != "" %}
-            </div> {# Close previous year's list #}
-          {% endif %}
-          <h3 class="year-heading">{{ gigYear }}</h3>
-          <div class="gig-list-compact">
-          {% set currentYear = gigYear %}
-        {% endif %}
-
-        <article class="gig-compact {% if gig.program and gig.program.dances %}gig-expandable{% endif %}">
-          <div class="gig-summary">
-            <time class="gig-date" datetime="{{ gig.date }}">
-              {{ gig.date | date("MMM d") }}
-            </time>
-            <span class="gig-divider">·</span>
-            <span class="gig-series">
-              {% if gig.series_url %}
-                <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
-                  {{ gig.series }}
-                </a>
-              {% else %}
-                {{ gig.series }}
-              {% endif %}
-            </span>
-            <span class="gig-divider">·</span>
-            <span class="gig-location">{{ gig.location }}</span>
-            {% if gig.band %}
-              <span class="gig-divider">·</span>
-              <span class="gig-band">
-                {% if gig.band_url %}
-                  <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
-                    {{ gig.band }}
-                  </a>
-                {% else %}
-                  {{ gig.band }}
-                {% endif %}
-              </span>
-            {% endif %}
-            {% if gig.program and gig.program.dances %}
-              <button class="gig-toggle" aria-label="Show program">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-                  <path d="M6 9L1 4h10z"/>
-                </svg>
-              </button>
-            {% endif %}
-          </div>
-
-          {% if gig.program and gig.program.dances %}
-            <div class="gig-program" hidden>
-              <h4>Program</h4>
-              <ol class="dance-program-list">
-                {% for dance in gig.program.dances %}
-                  <li class="program-dance">
-                    {# Check if this is a medley #}
-                    {% if dance.medley %}
-                      <strong>Medley:</strong>
-                      <ul class="medley-list">
-                        {% for medleyDance in dance.medley %}
-                          <li class="medley-item">
-                            {% if medleyDance.url %}
-                              <a href="{{ medleyDance.url }}" target="_blank" rel="noopener">
-                                <strong>{{ medleyDance.title }}</strong>
-                              </a>
-                            {% else %}
-                              <strong>{{ medleyDance.title }}</strong>
-                            {% endif %}
-                            {% if medleyDance.author %} by {{ medleyDance.author }}{% endif %}
-                            {% if medleyDance.video %}
-                              <a href="{{ medleyDance.video }}" target="_blank" rel="noopener" class="dance-video-link">
-                                (video)
-                              </a>
-                            {% endif %}
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% else %}
-                      {# Single dance #}
-                      {% if dance.url %}
-                        <a href="{{ dance.url }}" target="_blank" rel="noopener">
-                          <strong>{{ dance.title }}</strong>
-                        </a>
-                      {% else %}
-                        <strong>{{ dance.title }}</strong>
-                      {% endif %}
-                      {% if dance.author %} by {{ dance.author }}{% endif %}
-                      {% if dance.video %}
-                        <a href="{{ dance.video }}" target="_blank" rel="noopener" class="dance-video-link">
-                          (video)
-                        </a>
-                      {% endif %}
-                    {% endif %}
-                  </li>
-                  {% if gig.program.break_after and loop.index == gig.program.break_after %}
-                    <li class="program-break">— Break —</li>
-                  {% endif %}
-                {% endfor %}
-              </ol>
-              {% if gig.program.notes %}
-                <p class="program-notes">{{ gig.program.notes }}</p>
-              {% endif %}
-            </div>
-          {% endif %}
-        </article>
-
-        {% if loop.last %}
-          </div> {# Close last year's list #}
-        {% endif %}
-      {% endfor %}
-    </section>
-  {% endif %}
-</div>
+  </div>
+</section>
