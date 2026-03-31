@@ -6,49 +6,42 @@
       "series": "Emerald City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Snail Haven -- Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)",
+      "band": "Snail Haven",
+      "band_member": "Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)",
       "program": {
         "break_after": 5,
         "dances": [
           {
             "title": "Foxglove",
-            "author": "Tom Thoureau",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12734"
+            "author": "Tom Thoureau"
           },
           {
             "title": "Tika Tika Timing",
-            "author": "Dean Snipes",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11680"
+            "author": "Dean Snipes"
           },
           {
             "title": "Solstice Special",
-            "author": "Tony Parkes",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1411"
+            "author": "Tony Parkes"
           },
           {
             "title": "32 Seconds",
-            "author": "Tom Calwell",
-            "url": "https://www.dancingthread.ca/condance.htm#seconds"
+            "author": "Tom Calwell"
           },
           {
             "title": "Read Between the Lines",
-            "author": "Bob Isaacs",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1869"
+            "author": "Bob Isaacs"
           },
           {
             "title": "Devious",
-            "author": "Don Flaherty",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=5731"
+            "author": "Don Flaherty"
           },
           {
             "title": "The Second Time Around",
-            "author": "Jim Kitch",
-            "url": "https://www.jefftk.com/contras/dances/second"
+            "author": "Jim Kitch"
           },
           {
             "title": "Apples and Caramel",
-            "author": "Seth Tepfer",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17770"
+            "author": "Seth Tepfer"
           },
           {
             "title": "Hi Honey, How was your Hey",
@@ -56,8 +49,7 @@
           },
           {
             "title": "A-1 Reel",
-            "author": "Chris Weiler",
-            "url": "http://caller.chrisweiler.ws/dances.htm#a1reel"
+            "author": "Chris Weiler"
           }
         ],
         "notes": "Split the night, Ali Webb called the dances before the break, I called the second half."
@@ -69,62 +61,54 @@
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
       "band": "Countercurrent",
-      "band_url": "https://countercurrentmusic.com/",
+      "band_url":"https://countercurrentmusic.com/",
+      "band_members":"Alex Sturbaum (guitar, vocals) and Brian Lindsay (fiddle, foot percussion, vocals)",
       "program": {
         "break_after": 6,
         "notes": "Split the night, I called the first half, Abigail Golden called everything after the break.",
         "dances": [
           {
             "title": "Simplicity Swing",
-            "author": "Becky Hill",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10732"
+            "author": "Becky Hill"
           },
           {
             "title": "Saturday Night Line",
-            "author": "Joseph Pimentel",
-            "url": "https://contradb.com/dances/655"
+            "author": "Joseph Pimentel"
           },
           {
             "title": "The Erik Effect",
-            "author": "Ben Werner and Danielle Boudreau",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
+            "author": "Ben Werner and Danielle Boudreau"
           },
           {
             "title": "Chinese New Year",
             "author": "Chris Page",
-            "url": "http://chrispagecontra.awardspace.us/dances/index.htm#chinese-new-year",
             "video": "https://youtu.be/TFNULLWf_2M?si=blZiZSbsLNlqEDr4"
           },
           {
             "title": "And Another Thing",
-            "author": "Chris Page",
-            "url": "http://chrispagecontra.awardspace.us/dances/dlist2.htm#and-another-thing"
+            "author": "Chris Page"
           },
           {
             "title": "Mary Cay's Reel",
             "author": "David Kaynor",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10579",
             "video": "https://youtu.be/Pst_pPO-wDA?si=uDLJv3aSBINDlwSP"
           },
           {
             "title": "Flurry 2020 Vision",
-            "author": "Committee Group",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=16512"
+            "author": "Committee Group"
           },
           {
             "title": "Winter in Summerland",
-            "author": "Jeff Spero and James Hutson",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10882"
+            "author": "Jeff Spero and James Hutson"
           },
           {
             "title": "Leftovers (Contra Connection)",
-            "author": "Ben Werner",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12134"
+            "author": "Ben Werner"
           },
           {
             "title": "On the Third Hand",
             "author": "Caitlin Bannan",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=19085"
+            "slug": "on_the_third_hand"
           }
         ]
       }
@@ -134,61 +118,52 @@
       "series": "Lake City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
-      "band": "Beregovski's All Stars -- Laurie Andres (accordion), Jimmy Austin (trombone), W.B. Reid (banjo guitar), and Carl Shutoff (clarinet)",
+      "band": "Beregovski's All Stars",
+      "band_members": "Laurie Andres (accordion), Jimmy Austin (trombone), W.B. Reid (banjo guitar), and Carl Shutoff (clarinet)",
       "program": {
         "break_after": 6,
         "dances": [
           {
             "title": "The Nice Combination",
-            "author": "Gene Hubert",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=1"
+            "author": "Gene Hubert"
           },
           {
             "title": "Becket in the Kitchen",
-            "author": "Becky Hill",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17"
+            "author": "Becky Hill"
           },
           {
             "title": "A Dance for Dan",
-            "author": "Bill Olson",
-            "url": "https://www.billolsondance.com/dandance"
+            "author": "Bill Olson"
           },
           {
             "title": "The 24th of May",
-            "author": "Yoyo Zhou",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15057"
+            "author": "Yoyo Zhou"
           },
           {
             "title": "All the Way Over & All the Way Back",
             "author": "Jacqui Grennan",
-            "url": "https://www.jacquigrennan.com/all-the-way-over",
             "video": "https://youtu.be/QW8iY2yQAxk?si=cGhuCKLgev5QuEKW"
           },
           {
             "title":"Train Delay",
             "author": "Maia McCormick",
-            "url": "https://contra.maiamccormick.com/dances.html#traindelay",
             "video": "https://youtu.be/3XnNUj3rLbU?si=3XXbZETx0VqODZOy"
           },
           {
             "title": "The Carousel",
-            "author": "Tom Hinds",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=10324"
+            "author": "Tom Hinds"
           },
           {
             "title": "Shadows of St. Louis",
-            "author": "Nicholas Rockstroh",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14190"
+            "author": "Nicholas Rockstroh"
           },
           {
             "title": "Marshmallows in Flight",
-            "author": "Rich Goss",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=13690"
+            "author": "Rich Goss"
           },
           {
             "title":"A Stroll in the Hey",
-            "author": "Jacqui Grennan",
-            "url": "https://www.jacquigrennan.com/strollinthehey"
+            "author": "Jacqui Grennan"
           }
         ]
       }
