@@ -19,7 +19,7 @@
   align-items: center;
 
   @media (min-width: 640px) {
-    grid-template-columns: 1fr 220px;
+    grid-template-columns: 1fr 1fr;
     padding: 52px 32px 60px;
   }
 }
@@ -62,12 +62,14 @@
 .hero__photo {
   border-radius: var(--border-radius);
   overflow: hidden;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 16 / 9; //mobile
   order: -1;
-
+  grid-column: 1 / -1; //spans full width on mobile
+ 
   @media (min-width: 640px) {
     order: 1;
-    aspect-ratio: 2 / 3;
+    grid-column: auto;
+    aspect-ratio: 4 / 3; //desktop
   }
 
   img {
