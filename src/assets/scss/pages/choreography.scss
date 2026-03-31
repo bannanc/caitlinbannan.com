@@ -1,0 +1,230 @@
+/* ============================================
+   CHOREOGRAPHY PAGE
+   ============================================ */
+
+/* ---- Index list ---- */
+
+.choreo-index {
+  background: var(--color-bg-neutral);
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.choreo-index__inner {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 28px 20px;
+
+  @media (min-width: 1024px) {
+    padding: 32px 32px;
+  }
+}
+
+.choreo-index__label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.choreo-index__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choreo-index__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.choreo-index__name {
+  font-weight: 500;
+  color: var(--color-sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--color-link-hover);
+    border-bottom: none;
+  }
+}
+
+.choreo-index__meta {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.choreo-index__divider {
+  font-size: 1.2rem;
+  color: var(--color-border);
+}
+
+.choreo-index__desc {
+  font-size: 1.3rem;
+  color: var(--color-text-secondary);
+}
+
+/* ---- Dance cards ---- */
+
+.choreo-cards {
+  background: var(--color-white);
+}
+
+.choreo-cards__inner {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 1024px) {
+    padding: 32px 32px;
+  }
+}
+
+.dance-card {
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.dance-card__header {
+  background: var(--color-bg-neutral);
+  padding: 14px 18px 12px;
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.dance-card__title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--color-navy);
+  margin-bottom: 5px;
+}
+
+.dance-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.dance-card__meta-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.dance-card__body {
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: var(--color-white);
+
+  @media (min-width: 560px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---- Figures column ---- */
+
+.dance-figures__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.dance-figures__section {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0 6px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dance-figures__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-rose);
+  padding-top: 1px;
+}
+
+.dance-figures__moves {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- Notes column ---- */
+
+.dance-notes {
+  border-top: 0.5px solid var(--color-border);
+  padding-top: 16px;
+
+  @media (min-width: 560px) {
+    border-top: none;
+    border-left: 0.5px solid var(--color-border);
+    padding-top: 0;
+    padding-left: 18px;
+  }
+}
+
+.dance-notes__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.dance-notes__item {
+  font-size: 1.3rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dance-notes__video {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-rose);
+  text-decoration: underline;
+
+  &:hover {
+    color: darken(#C17A8A, 10%);
+    border-bottom: none;
+  }
+}
