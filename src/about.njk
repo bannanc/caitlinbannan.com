@@ -1,70 +1,90 @@
 ---
-title: About / Contact
+title: About
 layout: layouts/base.njk
 eleventyNavigation:
   key: About
   order: 4
 ---
-<div class="home-page">
-  <div class="home-page__bg-square"></div>
 
-  {# Hero section #}
-  <section class="hero">
-    <div class="hero__col">
-      <h1 class="hero__title gradient-text">{{ home.about_title }}</h1>
-    </div>
-    <div class="hero__col">
+{# ---- Page header ---- #}
+<div class="page-header">
+  <div class="page-header__inner">
+    <p class="page-header__eyebrow">About</p>
+    <h1 class="page-header__title">Caitlin Bannan</h1>
+  </div>
+</div>
+
+{# ---- Bio ---- #}
+<section class="about-bio">
+  <div class="about-bio__inner">
+    <div class="about-bio__photo">
       {% image
-        home.about_image,
-        home.about_image_alt,
-        "(min-width: 1024px) 50vw, 100vw",
-        "hero__image shadow",
+        "src/assets/img/calling-photo.jpg",
+        "Caitlin Bannan calling a contra dance",
+        "(min-width: 640px) 220px, 100vw",
+        "",
         "eager"
       %}
     </div>
-  </section>
-
-<section class="about-section">
-  <p>
-  <br>
-  </p>
-  <p>
-    Hi! I'm Caitlin. I'm a contra dance caller based in Seattle, WA.
-    I have always been a dancer, I started ballet at about 6 years old and continued performance dance styles in ballet, modern, and jazz through college.
-    I picked up social dancing -- east coast swing, fusion and contra dance -- in Seattle in the early 2010s.
-    One of the things that kept me coming back to contra dance was the intergenerational and inclusive communities.
-  </p>
-
-  <p>
-    As a caller my goal is to use my platform to make everyone feel welcome and comfortable.
-    I am passionate about creating programs where experienced dancers can leaving feeling like they've done something new
-    while still being inclusive to beginners and less experienced members of the community.
-    I have called contra dances in Seattle and New Mexico and am looking forward to expanding that list.
-    I also have experience calling family and community dances and am always excited to share this tradition with the next generation and new audiences.
-  </p>
-
-  <p>
-    I have begun to dabble in contra choreography.
-    So far, I have been mostly inspired to make approachable dances with moves we don't see as often at a regular dance night.
-  </p>
+    <div class="about-bio__content">
+      <p class="about-bio__role">Contra dance caller · Seattle, WA</p>
+      <p class="about-bio__text">I'm a contra dance caller based in Seattle, WA, focused on creating evenings that are welcoming to newcomers and satisfying for experienced dancers. With experience organizing dance nights and weekends, I understand what it takes to bring a community together. I've called for family and community dances and love introducing this tradition to new audiences.</p>
+    </div>
+  </div>
 </section>
 
-  <section class="contact-section">
-    <h2>Contact</h2>
-    <p>If you'd like to book a dance or ask a question, please reach out via the form below:</p>
-    <hr/>
-    {% include "partials/form.njk" %}
-  </section>
+{# ---- Contact ---- #}
+<section class="about-contact">
+  <div class="about-contact__inner">
+    <h2 class="about-contact__title">Contact me</h2>
+    <form
+      class="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="name">Your name</label>
+        <input
+          class="contact-form__input"
+          type="text"
+          name="name"
+          id="name"
+          autocomplete="name"
+          placeholder="Jane Smith"
+          required
+        >
+      </div>
 
-  <h2>Computational Chemistry?</h2>
-  <p>
-    Did you find my website looking for a computational chemist?
-    You're not wrong, that is what I do for a living.
-    Professionally, I'm the manager of the Scientific Infrastructure Group at
-    <a href="https://www.eyesopen.com/">OpenEye, Cadence Molecular Sciences</a>.
-  </p>
-  <p>
-    I'd love to connect about chemistry too, feel free to reach out on
-    <a href="https://www.linkedin.com/in/caitlinbannan/">LinkedIn</a>.
-  </p>
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="email">Email address</label>
+        <input
+          class="contact-form__input"
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          placeholder="jane@example.com"
+          required
+        >
+      </div>
+
+      <div class="contact-form__group--full">
+        <label class="contact-form__label" for="message">Message</label>
+        <textarea
+          class="contact-form__textarea"
+          name="message"
+          id="message"
+          placeholder="Say hello, ask about availability, or just tell me about your dance..."
+          required
+        ></textarea>
+      </div>
+
+      <div class="contact-form__submit">
+        <button class="contact-form__submit-btn" type="submit">
+          Send message
+        </button>
+      </div>
+    </form>
+  </div>
 </section>
