@@ -18,13 +18,15 @@ eleventyNavigation:
 <section class="about-bio">
   <div class="about-bio__inner">
     <div class="about-bio__photo">
-      {% image
-        "src/assets/img/calling-photo.jpg",
-        "Caitlin Bannan calling a contra dance",
-        "(min-width: 640px) 220px, 100vw",
-        "",
-        "eager"
-      %}
+      {% if about.image %}
+        {% image
+          about.image,
+          about.image_alt or "Caitlin Bannan calling a contra dance",
+          "(min-width: 640px) 220px, 100vw",
+          "",
+          "eager"
+        %}
+      {% endif %}
     </div>
     <div class="about-bio__content">
       <p class="about-bio__role">Contra dance caller · Seattle, WA</p>
