@@ -62,14 +62,14 @@
 .hero__photo {
   border-radius: var(--border-radius);
   overflow: hidden;
-  aspect-ratio: 16 / 9; //mobile
+  aspect-ratio: 16 / 9;
   order: -1;
-  grid-column: 1 / -1; //spans full width on mobile
- 
+  grid-column: 1 / -1;
+
   @media (min-width: 640px) {
     order: 1;
     grid-column: auto;
-    aspect-ratio: 4 / 3; //desktop
+    aspect-ratio: 4 / 3;
   }
 
   img {
@@ -207,7 +207,9 @@
 /* ---- Videos ---- */
 
 .home-videos {
-  background: var(--color-bg-neutral);
+  background: var(--color-bg-warm);
+  border-top: 0.5px solid var(--color-border-warm);
+  border-bottom: 0.5px solid var(--color-border-warm);
 }
 
 .home-videos__inner {
@@ -234,30 +236,62 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: none;
+
+    .video-card__play {
+      background: var(--color-rose);
+      transform: scale(1.08);
+    }
+
+    .video-card__thumb img {
+      opacity: 0.85;
+    }
+  }
 }
 
-.video-card__embed {
+.video-card__thumb {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
-  background: var(--color-navy);
   border-radius: var(--border-radius);
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--color-navy);
 
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+  img {
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    transition: opacity 0.2s ease;
   }
+}
+
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: var(--color-navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0.92;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .video-card__caption {
   font-size: 1.3rem;
   color: var(--color-text-secondary);
   line-height: 1.4;
+  margin: 0;
 }
 
 .video-card__title {
@@ -272,8 +306,7 @@
 /* ---- Choreography teaser ---- */
 
 .home-choreo {
-  background: var(--color-bg-warm);
-  border-top: 0.5px solid var(--color-border-warm);
+  background: var(--color-bg-neutral);
 }
 
 .home-choreo__inner {

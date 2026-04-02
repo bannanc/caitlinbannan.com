@@ -20,6 +20,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('machineDate', machineDateFilter);
   eleventyConfig.addFilter('svg', svgFilter);
 
+  // Limit filter — returns first N items from an array
+  eleventyConfig.addFilter('limit', (array, n) => array.slice(0, n));
+
+  // Sort by date filter — sorts array by date field, newest first
+  eleventyConfig.addFilter('sortByDate', (array) => {
+    return array.slice().sort((a, b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
+  });
+
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 

@@ -21,13 +21,15 @@ eleventyNavigation:
       </div>
     </div>
     <div class="hero__photo">
-      {% image
-        home.image,
-        home.image_alt,
-        "(min-width: 640px) 220px, 100vw",
-        "",
-        "eager"
-      %}
+      {% if home.image %}
+        {% image
+          home.image,
+          home.image_alt,
+          "(min-width: 640px) 50vw, 100vw",
+          "",
+          "eager"
+        %}
+      {% endif %}
     </div>
   </div>
 </section>
@@ -42,7 +44,7 @@ eleventyNavigation:
 
     {% if gigs.upcoming.length %}
       <div class="gig-cards">
-        {% for gig in gigs.upcoming | slice(0, 3) %}
+        {% for gig in gigs.upcoming | limit(3) %}
           <article class="gig-card">
             <p class="gig-card__month">
               {{ gig.date | date("MMM yyyy") }}
@@ -56,11 +58,11 @@ eleventyNavigation:
                   {{ gig.series }} ↗
                 </a>
               {% else %}
-                <p class="gig-card__org" style="text-decoration: none;">{{ gig.series }}</p>
+                <p class="gig-card__org--no-link">{{ gig.series }}</p>
               {% endif %}
               <p class="gig-card__location">{{ gig.location }}</p>
             </div>
-            {% if gig.band %}
+            {% if gig.band and gig.band != "TBA" %}
               <div>
                 <p class="gig-card__band">{{ gig.band }}</p>
                 {% if gig.band_members %}
@@ -74,39 +76,37 @@ eleventyNavigation:
         {% endfor %}
       </div>
     {% else %}
-      <p>No upcoming gigs at the moment — check back soon!</p>
+      <p class="home-gigs__empty">No upcoming gigs at the moment — check back soon!</p>
     {% endif %}
   </div>
 </section>
 
-{# ---- Booking strip ---- #}
-<div class="booking-strip">
-  <div class="booking-strip__inner">
-    <div>
-      <p class="booking-strip__label">Get in touch</p>
-      <p class="booking-strip__text">Interested in having me call for your dance? I'd love to hear from you.</p>
-    </div>
-    <a href="{{ '/about/' | url }}" class="btn btn--navy">Contact me</a>
-  </div>
-</div>
-
 {# ---- Featured videos ---- #}
 {% if home.videos and home.videos.length %}
-  <section class="home-videos">
+  <section class="home-videos section-warm">
     <div class="home-videos__inner">
       <div class="section-header">
         <h2 class="section-header__title">Watch me call</h2>
       </div>
       <div class="video-grid">
         {% for video in home.videos %}
-          <div class="video-card">
-            <div class="video-card__embed">
-              <iframe
-                src="https://www.youtube.com/embed/{{ video.youtube_id }}"
-                title="{{ video.title }}"
-                allowfullscreen
+          <a
+            class="video-card"
+            href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="video-card__thumb">
+              <img
+                src="https://img.youtube.com/vi/{{ video.youtube_id }}/hqdefault.jpg"
+                alt="{{ video.title }}"
                 loading="lazy"
-              ></iframe>
+              >
+              <div class="video-card__play">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
             </div>
             <p class="video-card__caption">
               <span class="video-card__title">{{ video.title }}</span>
@@ -114,7 +114,7 @@ eleventyNavigation:
                 <span class="video-card__event"> · {{ video.event }}</span>
               {% endif %}
             </p>
-          </div>
+          </a>
         {% endfor %}
       </div>
     </div>
@@ -130,10 +130,10 @@ eleventyNavigation:
         <a href="{{ '/choreography/' | url }}" class="section-header__link">See all →</a>
       </div>
       <div class="choreo-teaser-grid">
-        {% set recentDances = choreography | sort(true, false, 'date') | slice(0, 2) %}
+        {% set recentDances = choreography | sortByDate | limit(2) %}
         {% for dance in recentDances %}
           <article class="choreo-teaser-card">
-            <a class="choreo-teaser-card__title" href="/choreography/{{ dance.slug }}/">
+            <a class="choreo-teaser-card__title" href="/choreography/#{{ dance.slug }}">
               {{ dance.title }}
             </a>
             <p class="choreo-teaser-card__meta">
@@ -149,3 +149,14 @@ eleventyNavigation:
     </div>
   </section>
 {% endif %}
+
+{# ---- Booking strip ---- #}
+<div class="booking-strip">
+  <div class="booking-strip__inner">
+    <div>
+      <p class="booking-strip__label">Get in touch</p>
+      <p class="booking-strip__text">Interested in having me call for your dance? I'd love to hear from you.</p>
+    </div>
+    <a href="{{ '/about/' | url }}" class="btn btn--navy">Contact me</a>
+  </div>
+</div>
