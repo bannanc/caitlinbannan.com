@@ -9,7 +9,7 @@ permalink: /gigs/previous/
   <div class="page-header__inner">
     <p class="page-header__eyebrow">Program archive</p>
     <h1 class="page-header__title">Previous Gigs</h1>
-    <p class="page-header__subtitle">A record of nights called — useful for callers researching program flow and repertoire.</p>
+    <p class="page-header__subtitle">A record of nights called.</p>
   </div>
 </div>
 
@@ -69,12 +69,10 @@ permalink: /gigs/previous/
 
                 {# Break marker #}
                 {% if gig.program.break_after and loop.index == gig.program.break_after %}
-                  <div class="program__dance">
-                    <div class="program__break">
-                      <span class="program__break-line"></span>
-                      <span class="program__break-label">Break</span>
-                      <span class="program__break-line"></span>
-                    </div>
+                  <div class="program__break">
+                    <span class="program__break-line"></span>
+                    <span class="program__break-label">Break</span>
+                    <span class="program__break-line"></span>
                   </div>
                 {% endif %}
 
@@ -111,6 +109,12 @@ permalink: /gigs/previous/
                 </div>
 
               {% endfor %}
+
+              {# Program notes #}
+              {% if gig.program.notes %}
+                <p class="program__notes">{{ gig.program.notes }}</p>
+              {% endif %}
+
             </div>
           {% endif %}
 
