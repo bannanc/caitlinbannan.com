@@ -2,6 +2,11 @@
 
 This file has a list of the image assets and relevant details.
 
+Pictures currently on website
+* hero-dance.jpg - Feb 20, 2026 by Rowan Corbalis
+* about-photo.jpg - Feb 20, 2026 by Rowan Corbalis
+
+Potential pics of me:
 * dancing1.png - From Rocky Mountain Rendezvous September 2024
   - not on website because I don't know who to give photo credit to
 * headshot1.png - taken by a friend in Santa Fe, NM March 2024

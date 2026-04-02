@@ -1,53 +1,76 @@
 :root {
-  /* Brand Colors */
-  --color-primary: #222;
-  --color-secondary: #2f5bc2;
+  /* ============================================
+     BRAND COLORS
+     ============================================ */
 
-  /* Background Colors */
-  --color-bg: #fff;
-  --color-bg-secondary: #f7f7f7;
-  --color-bg-accent: #d9a0a3;
-  --color-bg-hover: #f3f4f6cc;
+  /* Primary palette */
+  --color-navy:       #1A2E4A;
+  --color-sage:       #4A7C6F;
+  --color-rose:       #C17A8A;
+  --color-rose-blush: #EDD5DB;
 
-  /* Text and Border Colors */
-  --color-text: #222;
-  --color-text-alt: #fff;
-  --color-text-gray: #6b7280;
-  --color-border: rgb(0 0 0 / 6%);
+  /* Neutrals */
+  --color-off-white:  #F5F2EE;
+  --color-white:      #ffffff;
+  --color-linen:      #E8E2D9;
 
-  /* Status Colors */
-  --color-danger: #e03e3e;
+  /* ============================================
+     SEMANTIC COLOR ROLES
+     ============================================ */
 
-  /* Typography */
-  --font-family-base: InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --font-family-heading: var(--font-family-base);
+  /* Backgrounds */
+  --color-bg:             var(--color-white);
+  --color-bg-warm:        var(--color-rose-blush);   /* hero, page headers, alternating sections */
+  --color-bg-neutral:     var(--color-off-white);    /* body sections, form backgrounds */
+  --color-bg-dark:        var(--color-navy);         /* nav, footer, primary CTA */
 
-  /* Sizes */
-  --site-width: 850px;
-  --header-height: 66px;
-  --header-height-lg: 76px;
+  /* Text */
+  --color-text:           var(--color-navy);
+  --color-text-secondary: #6a5a52;
+  --color-text-muted:     #9a8a80;
+  --color-text-on-dark:   var(--color-linen);
+  --color-text-on-dark-muted: #a0b4c8;
+
+  /* Interactive */
+  --color-link:           var(--color-sage);
+  --color-link-hover:     #2C5045;
+  --color-cta-primary:    var(--color-navy);
+  --color-cta-secondary:  var(--color-sage);
+  --color-cta-contact:    var(--color-rose);
+
+  /* Accents */
+  --color-accent-label:   var(--color-rose);         /* section labels, month tags */
+  --color-accent-own:     var(--color-sage);         /* your original dances */
+  --color-accent-video:   var(--color-rose);         /* video links */
+  --color-accent-band:    var(--color-sage);         /* band names */
+
+  /* Borders */
+  --color-border:         #e0d8d0;
+  --color-border-warm:    #d4b8c0;                   /* borders on rose-blush sections */
+  --color-border-dark:    rgba(255, 255, 255, 0.08); /* borders on navy sections */
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  --font-family-base: InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-heading: Georgia, 'Times New Roman', serif;
+
+  /* ============================================
+     LAYOUT
+     ============================================ */
+  --site-width:       860px;
+  --header-height:    56px;
+  --header-height-lg: 64px;
+
+  /* ============================================
+     COMPONENT TOKENS
+     ============================================ */
+  --border-radius:    8px;
+  --border-radius-sm: 4px;
+  --border-radius-pill: 20px;
+  --shadow:           0 2px 8px rgba(26, 46, 74, 0.08);
+  --shadow-card:      0 1px 3px rgba(26, 46, 74, 0.06);
 
   /* Z-index */
   --z-header: 10;
-
-  /* Other */
-  --border-radius: 12px;
-  --border-radius-sm: 5px;
-  --shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
-
-  // Dark mode colors
-  --color-secondary-dark: rgb(22, 78, 99);
-
-  --color-link-dark: rgb(8, 145, 178);
-
-  --color-bg-dark: #000;
-  --color-bg-wrapper-bg-dark: rgb(24 24 27);
-  --color-bg-secondary-dark: rgb(42 42 43);
-  --color-bg-accent-dark: #8f444d;
-
-  --color-title-dark: rgb(244 244 245);
-  --color-text-dark: rgb(161 161 170);
-
-  --color-border-dark: rgb(39, 39, 42);
-
 }

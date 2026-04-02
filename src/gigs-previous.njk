@@ -1,0 +1,134 @@
+---
+title: Past Programs
+layout: layouts/base.njk
+permalink: /gigs/previous/
+---
+
+{# ---- Page header ---- #}
+<div class="page-header">
+  <div class="page-header__inner">
+    <p class="page-header__eyebrow">Program archive</p>
+    <h1 class="page-header__title">Previous Gigs</h1>
+    <p class="page-header__subtitle">A record of nights called.</p>
+  </div>
+</div>
+
+{# ---- Archive ---- #}
+<section class="section-neutral">
+  <div class="archive__inner">
+
+    {% if gigs.previous.length %}
+
+      {# Group gigs by year #}
+      {% set currentYear = "" %}
+
+      {% for gig in gigs.previous %}
+        {% set gigYear = gig.date | date("yyyy") %}
+
+        {# Year heading when year changes #}
+        {% if gigYear != currentYear %}
+          {% if currentYear != "" %}
+            </div> {# close previous year group #}
+          {% endif %}
+          <div class="archive__year-group">
+          <p class="archive__year-label">{{ gigYear }}</p>
+          {% set currentYear = gigYear %}
+        {% endif %}
+
+        {# Gig entry #}
+        <article class="gig-entry">
+
+          {# Header: date + org + location + band #}
+          <div class="gig-entry__header">
+            <p class="gig-entry__date">{{ gig.date | date("MMM d") }}</p>
+            <div>
+              {% if gig.series_url %}
+                <a
+                  class="gig-entry__org"
+                  href="{{ gig.series_url }}"
+                  target="_blank"
+                  rel="noopener"
+                >{{ gig.series }} ↗</a>
+              {% else %}
+                <span class="gig-entry__org--no-link">{{ gig.series }}</span>
+              {% endif %}
+              <p class="gig-entry__location">{{ gig.location }}</p>
+              {% if gig.band %}
+                <p class="gig-entry__band">{{ gig.band }}</p>
+                {% if gig.band_members %}
+                  <p class="gig-entry__band-members">{{ gig.band_members }}</p>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+
+          {# Program list #}
+          {% if gig.program and gig.program.dances and gig.program.dances.length %}
+            <div class="program">
+              {% for dance in gig.program.dances %}
+
+                {# Break marker #}
+                {% if gig.program.break_after and loop.index == gig.program.break_after %}
+                  <div class="program__break">
+                    <span class="program__break-line"></span>
+                    <span class="program__break-label">Break</span>
+                    <span class="program__break-line"></span>
+                  </div>
+                {% endif %}
+
+                <div class="program__dance">
+                  <span class="program__num">{{ loop.index }}</span>
+                  <span class="program__content">
+
+                    {# Own dance — linked to choreography page #}
+                    {% if dance.own %}
+                      <a
+                        class="program__title--own"
+                        href="/choreography/{{ dance.slug }}/"
+                      >{{ dance.title }}</a>
+
+                    {# Everyone else — plain text #}
+                    {% else %}
+                      <span class="program__title">{{ dance.title }}</span>
+                    {% endif %}
+
+                    {% if dance.author %}
+                      <span class="program__author">{{ dance.author }}</span>
+                    {% endif %}
+
+                    {% if dance.video %}
+                      <a
+                        class="program__video"
+                        href="{{ dance.video }}"
+                        target="_blank"
+                        rel="noopener"
+                      >Watch video ↗</a>
+                    {% endif %}
+
+                  </span>
+                </div>
+
+              {% endfor %}
+
+              {# Program notes #}
+              {% if gig.program.notes %}
+                <p class="program__notes">{{ gig.program.notes }}</p>
+              {% endif %}
+
+            </div>
+          {% endif %}
+
+        </article>
+
+        {% if loop.last %}
+          </div> {# close last year group #}
+        {% endif %}
+
+      {% endfor %}
+
+    {% else %}
+      <p>No past gigs yet.</p>
+    {% endif %}
+
+  </div>
+</section>

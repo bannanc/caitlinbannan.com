@@ -6,60 +6,51 @@
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Fortified -- Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)",
+      "band": "Fortified",
+      "band_members": "Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)",
       "program": {
         "break_after": 6,
         "notes": "Marshall Gould did 2 guest caller slots. He called dances 3 and 4.",
         "dances": [
           {
             "title": "Get Me Going",
-            "author": "Lisa Greenleaf",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=4455"
+            "author": "Lisa Greenleaf"
           },
           {
             "title": "Back to Back Variation",
-            "author": "Isaac Banner",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18298"
+            "author": "Isaac Banner"
           },
           {
             "title": "The Erik Effect",
-            "author": "Ben Werner and Danielle Boudreau",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=12148"
+            "author": "Ben Werner and Danielle Boudreau"
           },
           {
             "title": "Friday at the Fool",
-            "author": "Seth Tepfer",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=11953"
+            "author": "Seth Tepfer"
           },
           {
             "title": "Diana's Delight",
-            "author": "Yoyo Zhou",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14126"
+            "author": "Yoyo Zhou"
           },
           {
             "title": "Charismatic Megafauna",
-            "author": "Linda Leslie",
-            "url": "https://contradb.com/dances/1950"
+            "author": "Linda Leslie"
           },
           {
             "title": "Rory O'Most",
-            "author": "Isaac Banner",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=17848"
+            "author": "Isaac Banner"
           },
           {
             "title": "Tangled Yarns",
-            "author": "Isaac Banner",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=18623"
+            "author": "Isaac Banner"
           },
           {
             "title": "Cupid's Clout",
-            "author": "Susan Petrick",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=14495"
+            "author": "Susan Petrick"
           },
           {
             "title": "And Thinking about Coffee Cups Variant",
-            "author": "Michael Furst",
-            "url": "https://www.ibiblio.org/contradance/thecallersbox/dance.php?id=15936"
+            "author": "Michael Furst"
           }
         ]
       }
@@ -69,7 +60,8 @@
       "series": "Olympia Contra Dance",
       "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
-      "band": "Riffraff -- Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)",
+      "band": "Riffraff",
+      "band_members": "Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)",
       "program": {
         "break_after": 5,
         "dances": [
@@ -98,7 +90,8 @@
           },
           {
             "title": "Zig it Right",
-            "author": "Caitlin Bannan"
+            "author": "Caitlin Bannan",
+            "slug": "zig_it_right"
           },
           {
             "title": "Love and Twirls",

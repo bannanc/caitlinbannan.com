@@ -2,76 +2,161 @@
 title: Home
 layout: layouts/base.njk
 eleventyNavigation:
+  key: Home
   order: 1
 ---
-<div class="home-page">
-  <div class="home-page__bg-square"></div>
-  
-  {# Hero section #}
-  <section class="hero">
-    <div class="hero__col">
-      <h1 class="hero__title gradient-text">{{ home.title }}</h1>
+
+{# ---- Hero ---- #}
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Contra dance caller · Seattle, WA</p>
+      <h1 class="hero__title">{{ home.title }}</h1>
       {% if home.body %}
-        <div class="hero__body">{{ home.body | markdown | safe }}</div>
+        <div class="hero__desc">{{ home.body | markdown | safe }}</div>
+      {% endif %}
+      <div class="hero__actions">
+        <a href="{{ '/about/' | url }}" class="btn btn--navy">Book me for your event</a>
+        <a href="{{ '/gigs/' | url }}" class="btn btn--sage">See upcoming gigs</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      {% if home.image %}
+        {% image
+          home.image,
+          home.image_alt,
+          "(min-width: 640px) 50vw, 100vw",
+          "",
+          "eager"
+        %}
       {% endif %}
     </div>
-    <div class="hero__col">
-      {% image
-        home.image,
-        home.image_alt,
-        "(min-width: 1024px) 50vw, 100vw",
-        "hero__image shadow",
-        "eager"
-      %}
+  </div>
+</section>
+
+{# ---- Upcoming gigs ---- #}
+<section class="home-gigs">
+  <div class="home-gigs__inner">
+    <div class="section-header">
+      <h2 class="section-header__title">Upcoming gigs</h2>
+      <a href="{{ '/gigs/' | url }}" class="section-header__link">See all →</a>
     </div>
-  </section>
 
     {% if gigs.upcoming.length %}
-      <section class="upcoming-gigs">
-        <h2>Upcoming Gigs</h2>
-        <div class="gig-list">
-          {% for gig in gigs.upcoming %}
-            <article class="gig-card">
-              <h3 class="gig-series">
-                {% if gig.series_url %}
-                  <a href="{{ gig.series_url }}" target="_blank" rel="noopener">
-                    {{ gig.series }}
-                  </a>
-                {% else %}
-                  {{ gig.series }}
-                {% endif %}
-              </h3>
-              <div class="gig-details">
-                <time class="gig-date" datetime="{{ gig.date }}">
-                  {{ gig.date | date("EEEE, MMMM d, yyyy") }}
-                </time>
-                <span class="gig-location">{{ gig.location }}</span>
-                {% if gig.band %}
-                  <span class="gig-band">
-                    with
-                    {% if gig.band_url %}
-                      <a href="{{ gig.band_url }}" target="_blank" rel="noopener">
-                        {{ gig.band }}
-                      </a>
-                    {% else %}
-                      {{ gig.band }}
-                    {% endif %}
-                  </span>
+      <div class="gig-cards">
+        {% for gig in gigs.upcoming | limit(3) %}
+          <article class="gig-card">
+            <p class="gig-card__month">
+              {{ gig.date | date("MMM yyyy") }}
+            </p>
+            <p class="gig-card__date">
+              {{ gig.date | date("EEE, MMM d") }}
+            </p>
+            <div>
+              {% if gig.series_url %}
+                <a class="gig-card__org" href="{{ gig.series_url }}" target="_blank" rel="noopener">
+                  {{ gig.series }} ↗
+                </a>
+              {% else %}
+                <p class="gig-card__org--no-link">{{ gig.series }}</p>
+              {% endif %}
+              <p class="gig-card__location">{{ gig.location }}</p>
+            </div>
+            {% if gig.band and gig.band != "TBA" %}
+              <div>
+                <p class="gig-card__band">{{ gig.band }}</p>
+                {% if gig.band_members %}
+                  <p class="gig-card__band-members">{{ gig.band_members }}</p>
                 {% endif %}
               </div>
-            </article>
-          {% endfor %}
-        </div>
-      <p class="more">
-        <a href="/gigs/">See all gigs →</a>
-      </p>
-      </section>
+            {% else %}
+              <p class="gig-card__tba">Band TBA</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
     {% else %}
-      <section class="upcoming-gigs">
-        <h2>Upcoming Gigs</h2>
-        <p>No upcoming gigs scheduled at the moment. Check back soon!</p>
-      <p class="more">
-        <a href="/gigs/">See all previous gigs →</a>
-      </p>
-      </section>
+      <p class="home-gigs__empty">No upcoming gigs at the moment — check back soon!</p>
     {% endif %}
+  </div>
+</section>
+
+{# ---- Featured videos ---- #}
+{% if home.videos and home.videos.length %}
+  <section class="home-videos section-warm">
+    <div class="home-videos__inner">
+      <div class="section-header">
+        <h2 class="section-header__title">Watch me call</h2>
+      </div>
+      <div class="video-grid">
+        {% for video in home.videos %}
+          <a
+            class="video-card"
+            href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="video-card__thumb">
+              <img
+                src="https://img.youtube.com/vi/{{ video.youtube_id }}/hqdefault.jpg"
+                alt="{{ video.title }}"
+                loading="lazy"
+              >
+              <div class="video-card__play">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="video-card__caption">
+              <span class="video-card__title">{{ video.title }}</span>
+              {% if video.event %}
+                <span class="video-card__event">{{ video.event }}</span>
+              {% endif %}
+            </p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{# ---- Choreography teaser ---- #}
+{% if choreography and choreography.length %}
+  <section class="home-choreo">
+    <div class="home-choreo__inner">
+      <div class="section-header">
+        <h2 class="section-header__title">Original choreography</h2>
+        <a href="{{ '/choreography/' | url }}" class="section-header__link">See all →</a>
+      </div>
+      <div class="choreo-teaser-grid">
+        {% set recentDances = choreography | sortByDate | limit(2) %}
+        {% for dance in recentDances %}
+          <article class="choreo-teaser-card">
+            <a class="choreo-teaser-card__title" href="/choreography/#{{ dance.slug }}">
+              {{ dance.title }}
+            </a>
+            <p class="choreo-teaser-card__meta">
+              {{ dance.formation }}
+              {% if dance.progression %} · {{ dance.progression }}{% endif %}
+            </p>
+            {% if dance.notes and dance.notes.length > 0 %}
+              <p class="choreo-teaser-card__note">{{ dance.notes[0] | truncate(100) }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{# ---- Booking strip ---- #}
+<div class="booking-strip">
+  <div class="booking-strip__inner">
+    <div>
+      <p class="booking-strip__label">Get in touch</p>
+      <p class="booking-strip__text">Interested in having me call for your dance? I'd love to hear from you.</p>
+    </div>
+    <a href="{{ '/about/' | url }}" class="btn btn--navy">Contact me</a>
+  </div>
+</div>

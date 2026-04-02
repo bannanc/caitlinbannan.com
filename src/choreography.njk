@@ -3,47 +3,114 @@ title: Choreography
 layout: layouts/base.njk
 eleventyNavigation:
   key: Choreography
-  order: 2
+  order: 3
 ---
 
-<div class="choreography-page">
-  <h1>{{ title }}</h1>
-  <p class="intro">
-  I dabble in contra choreography.
-  Most dances I write its because there is a hook or move that I want to
-  call, but I could not find a dance that meets that audience's needs.
-  </p>
+{# ---- Page header ---- #}
+<div class="page-header">
+  <div class="page-header__inner">
+    <p class="page-header__eyebrow">Choreography</p>
+    <h1 class="page-header__title">Original dances</h1>
+    <p class="page-header__subtitle">Click a dance name to jump to its full notation.</p>
+  </div>
+</div>
 
-
-  <div class="dance-list">
-    {% for dance in choreography %}
-      <article class="dance-card">
-        <h2 class="dance-title">
-          <a href="/choreography/{{ dance.slug }}/">
-            {{ dance.title }}
-          </a>
-        </h2>
-        <div class="dance-meta">
-          <span class="dance-formation">{{ dance.formation }}</span>
+{# ---- Index list ---- #}
+<section class="choreo-index">
+  <div class="choreo-index__inner">
+    <p class="choreo-index__label">All dances</p>
+    <ul class="choreo-index__list">
+      {% for dance in choreography %}
+        <li class="choreo-index__item">
+          <a
+            class="choreo-index__name"
+            href="#{{ dance.slug }}"
+          >{{ dance.title }}</a>
+          {% if dance.formation %}
+            <span class="choreo-index__meta">{{ dance.formation }}</span>
+          {% endif %}
           {% if dance.progression %}
-            <span class="meta-divider">·</span>
-            <span class="dance-progression">{{ dance.progression }}</span>
+            <span class="choreo-index__divider">·</span>
+            <span class="choreo-index__meta">{{ dance.progression }}</span>
           {% endif %}
-          {% if dance.author %}
-            <span class="meta-divider">·</span>
-            <span class="dance-author">by {{ dance.author }}</span>
+          {% if dance.notes and dance.notes.length > 0 %}
+            <span class="choreo-index__divider">—</span>
+            <span class="choreo-index__desc">{{ dance.notes[0] | truncate(80) }}</span>
           {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ---- Dance cards ---- #}
+<section class="choreo-cards">
+  <div class="choreo-cards__inner">
+    {% for dance in choreography %}
+      <article class="dance-card" id="{{ dance.slug }}">
+
+        {# Card header #}
+        <div class="dance-card__header">
+          <h2 class="dance-card__title">{{ dance.title }}</h2>
+          <div class="dance-card__meta">
+            {% if dance.formation %}
+              <span>{{ dance.formation }}</span>
+            {% endif %}
+            {% if dance.progression %}
+              <span class="dance-card__meta-dot"></span>
+              <span>{{ dance.progression }}</span>
+            {% endif %}
+            {% if dance.author %}
+              <span class="dance-card__meta-dot"></span>
+              <span>by {{ dance.author }}</span>
+            {% endif %}
+          </div>
         </div>
-        {% if dance.notes and dance.notes.length > 0 %}
-          <p class="dance-preview">{{ dance.notes[0] | truncate(120) }}</p>
-        {% endif %}
+
+        {# Card body: figures + notes #}
+        <div class="dance-card__body">
+
+          {# Figures #}
+          {% if dance.figures and dance.figures.length %}
+            <div class="dance-figures">
+              <p class="dance-figures__title">Figures</p>
+              {% for fig in dance.figures %}
+                <div class="dance-figures__section">
+                  <span class="dance-figures__label">{{ fig.section }}</span>
+                  <p class="dance-figures__moves">
+                    {%- for move in fig.moves -%}
+                      {{ move }}{% if not loop.last %}<br>{% endif %}
+                    {%- endfor -%}
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {# Notes + video #}
+          {% if (dance.notes and dance.notes.length) or (dance.videos and dance.videos.length) %}
+            <div class="dance-notes">
+              {% if dance.notes and dance.notes.length %}
+                <p class="dance-notes__title">Notes</p>
+                {% for note in dance.notes %}
+                  <p class="dance-notes__item">{{ note }}</p>
+                {% endfor %}
+              {% endif %}
+              {% if dance.videos and dance.videos.length %}
+                {% for video in dance.videos %}
+                  <a
+                    class="dance-notes__video"
+                    href="{{ video.url }}"
+                    target="_blank"
+                    rel="noopener"
+                  >Watch video ↗{% if dance.videos.length > 1 %} — {{ video.label }}{% endif %}</a>
+                {% endfor %}
+              {% endif %}
+            </div>
+          {% endif %}
+
+        </div>
       </article>
     {% endfor %}
   </div>
-  <p class="intro">
-  Consider any of these dances as in the public domain.
-  Dances in our tradition don't exist without the communities
-  that dance them, I believe contra choreography belongs to the whole community.
-  Someday I'll write a blog post to share more thoughts on the topic.
-</p>
-</div>
+</section>

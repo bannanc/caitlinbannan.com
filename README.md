@@ -14,5 +14,15 @@ using variations on the Fernfolio template.
 - You should now be able to see everything running on localhost:8080
 
 ## Credit
-* Code was originally taken from [fernfolio-11ty-template](https://github.com/tylerMRoderick/fernfolio-11ty-template).
-* AI coding assistance, such as Claude AI was used to update the format to match the needs of showing the gigs and dance choreography. 
+* Claude AI has been used extensively in this project. When reformatting the website I asked it to act first as a 
+  designer and iterated with it on color pallettes, designs, and content. Then it updated all of my njk and format files
+  to match our agreed upon design. If you are remotely comfortable in a terminal and with json files I'd recommend this 
+  approach.
+* I owe significant credit to all of the callers who have helped me in my calling journey. In particular, Ben Werner 
+  and Lindsey Dono who have been major influences in my early calling and Jacqui Grennan, Frannie Marr, and Jeremy Korr 
+  who were early inspiration to start thinking about calling and are always there when I have questions. 
+* Thank you to folks who already had great public callers websites that I could use as inspiration especially 
+  [Jacqui Grennan](https://www.jacquigrennan.com/) and [Maia McCormick](https://contra.maiamccormick.com/dances.html).
+* The first version of the website was based on the 
+  [fernfolio-11ty-template](https://github.com/tylerMRoderick/fernfolio-11ty-template). At this point it does 
+  not resemble that website, but having a format that uses json files to start made everything easier. 
