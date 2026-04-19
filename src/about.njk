@@ -27,6 +27,9 @@ eleventyNavigation:
           "eager"
         %}
       {% endif %}
+      {% if about.photo_credit %}
+        <p class="photo-credit">{{ about.photo_credit }}</p>
+      {% endif %}
     </div>
     <div class="about-bio__content">
       <p class="about-bio__role">Contra dance caller · Seattle, WA</p>

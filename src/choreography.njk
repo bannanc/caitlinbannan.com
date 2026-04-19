@@ -22,20 +22,31 @@ eleventyNavigation:
     <ul class="choreo-index__list">
       {% for dance in choreography %}
         <li class="choreo-index__item">
-          <a
-            class="choreo-index__name"
-            href="#{{ dance.slug }}"
-          >{{ dance.title }}</a>
-          {% if dance.formation %}
-            <span class="choreo-index__meta">{{ dance.formation }}</span>
-          {% endif %}
-          {% if dance.progression %}
-            <span class="choreo-index__divider">·</span>
-            <span class="choreo-index__meta">{{ dance.progression }}</span>
-          {% endif %}
-          {% if dance.notes and dance.notes.length > 0 %}
-            <span class="choreo-index__divider">—</span>
-            <span class="choreo-index__desc">{{ dance.notes[0] | truncate(80) }}</span>
+          <div class="choreo-index__item-main">
+            <a
+              class="choreo-index__name"
+              href="#{{ dance.slug }}"
+            >{{ dance.title }}</a>
+            {% if dance.formation %}
+              <span class="choreo-index__meta">{{ dance.formation }}</span>
+            {% endif %}
+            {% if dance.progression %}
+              <span class="choreo-index__divider">·</span>
+              <span class="choreo-index__meta">{{ dance.progression }}</span>
+            {% endif %}
+            {% if not dance["co-author"] and dance.notes and dance.notes.length > 0 %}
+              <span class="choreo-index__divider">—</span>
+              <span class="choreo-index__desc">{{ dance.notes[0] | truncate(80) }}</span>
+            {% endif %}
+          </div>
+          {% if dance["co-author"] %}
+            <p class="choreo-index__coauthor">Choreographed with
+              {% if dance["co-author-url"] %}
+                <a href="{{ dance['co-author-url'] }}" target="_blank" rel="noopener">{{ dance["co-author"] }} ↗</a>
+              {% else %}
+                {{ dance["co-author"] }}
+              {% endif %}
+            </p>
           {% endif %}
         </li>
       {% endfor %}
@@ -52,6 +63,15 @@ eleventyNavigation:
         {# Card header #}
         <div class="dance-card__header">
           <h2 class="dance-card__title">{{ dance.title }}</h2>
+          {% if dance["co-author"] %}
+            <p class="dance-card__coauthor">Choreographed with
+              {% if dance["co-author-url"] %}
+                <a href="{{ dance['co-author-url'] }}" target="_blank" rel="noopener">{{ dance["co-author"] }} ↗</a>
+              {% else %}
+                {{ dance["co-author"] }}
+              {% endif %}
+            </p>
+          {% endif %}
           <div class="dance-card__meta">
             {% if dance.formation %}
               <span>{{ dance.formation }}</span>
@@ -59,10 +79,6 @@ eleventyNavigation:
             {% if dance.progression %}
               <span class="dance-card__meta-dot"></span>
               <span>{{ dance.progression }}</span>
-            {% endif %}
-            {% if dance.author %}
-              <span class="dance-card__meta-dot"></span>
-              <span>by {{ dance.author }}</span>
             {% endif %}
           </div>
         </div>

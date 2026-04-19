@@ -2,10 +2,21 @@
    BASE STYLES
    ============================================ */
 
+.photo-credit {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  text-align: right;
+  margin: 4px 0 0;
+}
+
 html {
   scroll-padding-top: 80px;
   font-size: 62.5%;
   font-family: var(--font-family-base);
+
+  @media (min-width: 768px) {
+    font-size: 70%;
+  }
 }
 
 body {
