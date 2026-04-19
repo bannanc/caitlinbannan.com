@@ -25,9 +25,14 @@
 }
 
 .about-bio__photo {
-  border-radius: var(--border-radius);
-  overflow: hidden;
   aspect-ratio: 3 / 4;
+
+  picture {
+    display: block;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    aspect-ratio: inherit;
+  }
 
   img {
     width: 100%;

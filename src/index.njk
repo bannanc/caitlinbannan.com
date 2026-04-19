@@ -30,6 +30,9 @@ eleventyNavigation:
           "eager"
         %}
       {% endif %}
+      {% if home.photo_credit %}
+        <p class="photo-credit">{{ home.photo_credit }}</p>
+      {% endif %}
     </div>
   </div>
 </section>
