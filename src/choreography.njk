@@ -64,6 +64,14 @@ eleventyNavigation:
               <span class="dance-card__meta-dot"></span>
               <span>by {{ dance.author }}</span>
             {% endif %}
+            {% if dance["co-author"] %}
+              <span class="dance-card__meta-dot"></span>
+              {% if dance["co-author-url"] %}
+                <span>with <a class="dance-card__coauthor" href="{{ dance['co-author-url'] }}" target="_blank" rel="noopener">{{ dance["co-author"] }} ↗</a></span>
+              {% else %}
+                <span>with {{ dance["co-author"] }}</span>
+              {% endif %}
+            {% endif %}
           </div>
         </div>
 

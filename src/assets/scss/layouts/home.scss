@@ -334,8 +334,8 @@
 }
 
 .choreo-teaser-card {
-  background: var(--color-white);
-  border: 0.5px solid var(--color-border);
+  background: var(--color-navy);
+  border: 0.5px solid var(--color-border-dark);
   border-radius: var(--border-radius);
   padding: 16px 18px;
 }
@@ -343,27 +343,27 @@
 .choreo-teaser-card__title {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--color-sage);
+  color: var(--color-rose-blush);
   text-decoration: underline;
   text-underline-offset: 2px;
   display: block;
   margin-bottom: 4px;
 
   &:hover {
-    color: var(--color-link-hover);
+    color: var(--color-text-on-dark);
     border-bottom: none;
   }
 }
 
 .choreo-teaser-card__meta {
   font-size: 1.2rem;
-  color: var(--color-text-muted);
+  color: var(--color-rose);
   margin-bottom: 6px;
 }
 
 .choreo-teaser-card__note {
   font-size: 1.25rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-on-dark);
   line-height: 1.55;
   margin: 0;
 }
