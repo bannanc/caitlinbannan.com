@@ -39,12 +39,18 @@
 
 .choreo-index__item {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 6px 8px;
+  flex-direction: column;
+  gap: 2px;
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
+}
+
+.choreo-index__item-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
 }
 
 .choreo-index__name {
@@ -75,6 +81,19 @@
   font-size: 1.3rem;
   color: var(--color-navy);
   opacity: 0.75;
+}
+
+.choreo-index__coauthor {
+  font-size: 1.3rem;
+  color: #6a5a52;
+  font-style: italic;
+  margin: 0;
+
+  a {
+    color: #6a5a52;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 }
 
 /* ---- Dance cards ---- */
@@ -133,13 +152,20 @@
 }
 
 .dance-card__coauthor {
-  color: var(--color-rose-blush);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  font-size: 1.3rem;
+  color: #a8d4ca;
+  font-style: italic;
+  margin: 2px 0 6px;
 
-  &:hover {
-    color: var(--color-text-on-dark);
-    border-bottom: none;
+  a {
+    color: #a8d4ca;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--color-text-on-dark);
+      border-bottom: none;
+    }
   }
 }
 
