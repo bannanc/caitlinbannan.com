@@ -51,7 +51,8 @@ To add or update content:
 - **New gig** → add to `src/_data/gigs/YYYY.json`
 - **New dance** → add a new JSON file to `src/_data/choreography/`
 - **Homepage text/videos** → edit `src/_data/home.json`
-- **About photo** → edit `src/_data/about.json`
+- **Homepage hero image** → replace `src/assets/img/hero-dance.jpg`, then update the filename in `src/_data/home.json`
+- **About photo** → replace `src/assets/img/about-photo.jpg`, then update the filename in `src/_data/about.json`
 
 ## Credit
 * Claude AI has been used extensively in this project. When reformatting the website I asked it to act first as a 
