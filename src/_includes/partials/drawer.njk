@@ -19,6 +19,7 @@
           </a>
         </li>
       {%- for entry in navPages %}
+        {% if entry.title != "Home" %}
         <li class="drawer__nav-item">
           <a
             href="{{ entry.url | url }}"
@@ -27,7 +28,16 @@
             {{ entry.title }}
           </a>
         </li>
+        {% endif %}
       {%- endfor %}
+        <li class="drawer__nav-item">
+          <a
+            href="{{ '/about/' | url }}"
+            {% if page.url == '/about/' %} aria-current data-current="current item"{% endif %}
+          >
+            Contact me
+          </a>
+        </li>
       </ul>
     </div>
   </div>
