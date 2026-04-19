@@ -8,89 +8,22 @@ const Home = createClass({
     const entry = this.props.entry;
     const image = entry.getIn(['data', 'image']);
     const imageSrc = this.props.getAsset(image);
+    const title = entry.getIn(['data', 'title'], '');
+    const body = entry.getIn(['data', 'body'], '');
+    const photoCredit = entry.getIn(['data', 'photo_credit'], '');
 
     return html`
       <main>
-        <div class="home-page">
-          <div class="home-page__bg-square"></div>
-
-          <!-- Hero -->
-          <div class="hero">
-            <div class="hero__col">
-              <h1 class="hero__title gradient-text">${entry.getIn(['data', 'title'], null)}</h1>
-              <div class="hero__body">${this.props.widgetFor('body')}</div>
-            </div>
-            <div class="hero__col">
-              <img
-                class="hero__image shadow"
-                src="${imageSrc}"
-                alt="${entry.getIn(['data', 'image_alt'], null)}"
-                width="1000px"
-                height="1000px"
-                loading="lazy" />
-            </div>
+        <div style="background: #F5F2EE; padding: 40px 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+          <div>
+            <p style="font-size: 1.1rem; font-weight: 500; color: #4A7C6F; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 10px;">Contra dance caller</p>
+            <h1 style="font-size: 4.8rem; font-weight: 500; color: #1A2E4A; line-height: 1.1; margin-bottom: 14px;">${title}</h1>
+            <p style="font-size: 1.6rem; color: #5a5a5a; line-height: 1.65; margin-bottom: 24px;">${body}</p>
           </div>
-
-          <!-- Project List Placeholder (for illustrative purposes) -->
-          <div class="list-header">
-            <h2 class="list-header__title">Projects</h2>
-            <a class="btn btn--outline btn--sm" href="/projects">View All</a>
+          <div>
+            ${imageSrc ? html`<img src="${imageSrc}" alt="${entry.getIn(['data', 'image_alt'], '')}" style="width: 100%; border-radius: 8px; display: block;" />` : html`<div style="background: #a8d4ca; border-radius: 8px; aspect-ratio: 4/3;"></div>`}
+            ${photoCredit ? html`<p style="font-size: 1.2rem; color: #888; text-align: right; margin-top: 4px;">${photoCredit}</p>` : null}
           </div>
-          <section>
-            <div class="project-grid">
-              <div class="project-card">
-                <h4>
-                  <a class="project-card__title" href="#">
-                    <span class="project-card__emoji">👾</span>
-                    Placeholder Project
-                  </a>
-                </h4>
-                <p>This is not a real project and is only visible in the CMS.</p>
-                <p class="tag-list">
-                  <a class="project-card__tag tag" href="#" rel="tag">Javascript</a>
-                  <a class="project-card__tag tag" href="#" rel="tag">React</a>
-                </p>
-              </div>
-              <div class="project-card">
-                <h4>
-                  <a class="project-card__title" href="#">
-                    <span class="project-card__emoji">👾</span>
-                    Another Placeholder
-                  </a>
-                </h4>
-                <p>This is the summary for the second placeholder project.</p>
-                <p class="tag-list">
-                  <a class="project-card__tag tag" href="#" rel="tag">Golang</a>
-                  <a class="project-card__tag tag" href="#" rel="tag">GraphQL</a>
-                </p>
-              </div>
-            </div>
-          </section>
-
-
-          <!-- Article List Placeholder (for illustrative purposes) -->
-          <div class="list-header">
-            <h2 class="list-header__title">Articles</h2>
-            <a class="btn btn--outline btn--sm" href="/blog">View All</a>
-          </div>
-          <section>
-            <article class="article-card">
-              <a class="article-card__link" href="#">
-                <h5 class="article-card__title">Placeholder Article</h5>
-                <p class="article-card__summary">
-                  This is not a real article and is only visible in the CMS.
-                </p>
-              </a>
-            </article>
-            <article class="article-card">
-              <a class="article-card__link" href="#">
-                <h5 class="article-card__title">Placeholder Article</h5>
-                <p class="article-card__summary">
-                  This is not a real article and is only visible in the CMS.
-                </p>
-              </a>
-            </article>
-          </section>
         </div>
       </main>
     `;

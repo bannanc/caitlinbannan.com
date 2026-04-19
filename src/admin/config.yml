@@ -1,193 +1,68 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
-# Uncomment below to enable drafts
-# publish_mode: editorial_workflow
-
-media_folder: "src/assets/img" # Media files will be stored in the repo under images/uploads
+media_folder: "src/assets/img"
 
 collections:
-  #Global Settings
-  - name: "global-settings"
-    label: "Global Settings"
-    slug: "{{slug}}"
-    files:
 
-      # Site Metadata
-      - label: "Metadata"
-        name: "metadata"
-        file: "src/_data/metadata.json"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-
-      # Global Settings
-      - label: "Global Settings"
-        name: "global"
-        file: "src/_data/global.json"
-        fields:
-          - { label: "Enable Theme switch", name: "enable_theme_switch", widget: "boolean", required: true }
-          - { label: "Switch Theme Icon (.svg)", name: "switch_theme_icon", widget: "image", required: true }
-          - { label: "Use System Theme", name: "use_system_theme", widget: "boolean", required: true }
-          - {
-              label: "Default Theme",
-              name: "default_theme",
-              widget: "select",
-              options: ["light", "dark"],
-              default: "light",
-              required: true
-            }
-          - { label: "Logo (.svg)", name: "logo", widget: "image", required: true }
-          - { label: "Mobile Menu Icon (.svg)", name: "menu_icon", widget: "image", required: true }
-          - { label: "Close Icon (.svg)", name: "close_icon", widget: "image", required: true }
-
-  # Articles
-  - name: "article" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "src/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - {
-          label: "Meta Description",
-          name: "metaDescription",
-          widget: "text",
-          required: false,
-        }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-
-  # Projects
-  - name: "project"
-    label: "Project"
-    folder: "src/projects"
+  # Choreography — one JSON file per dance in src/_data/choreography/
+  - name: "choreography"
+    label: "Choreography"
+    folder: "src/_data/choreography"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Emoji", name: "emoji", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - {
-          label: "Meta Description",
-          name: "metaDescription",
-          widget: "text",
-          required: false,
-        }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Formation (e.g. Duple Minor - Becket)", name: "formation", widget: "string" }
+      - { label: "Progression (e.g. Single Progression)", name: "progression", widget: "string", required: false }
+      - { label: "Date Written", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Co-author name", name: "co-author", widget: "string", required: false }
+      - { label: "Co-author URL", name: "co-author-url", widget: "string", required: false }
+      - label: "Figures"
+        name: "figures"
+        widget: "list"
+        fields:
+          - { label: "Section (A1, A2, B1, B2)", name: "section", widget: "string" }
+          - { label: "Moves (one per line)", name: "moves", widget: "list" }
+      - { label: "Notes (one per entry)", name: "notes", widget: "list", required: false }
+      - label: "Videos"
+        name: "videos"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Label (e.g. Lake City Contra Dance, 2025)", name: "label", widget: "string" }
+          - { label: "YouTube URL", name: "url", widget: "string" }
 
-  # Pages
+  # Pages — editable data files for home and about
   - name: "pages"
-    label: "Page"
-    slug: "{{slug}}"
+    label: "Pages"
     files:
 
-      # Home page
       - label: "Home Page"
         name: "home"
         file: "src/_data/home.json"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - { label: Image, name: image, widget: image, required: false }
-          - {
-              label: Image Alt Text,
-              name: image_alt,
-              widget: string,
-              required: false,
-            }
+          - { label: "Hero title", name: "title", widget: "string" }
+          - { label: "Hero body text", name: "body", widget: "string" }
+          - { label: "Hero image", name: "image", widget: "image", required: false }
+          - { label: "Hero image alt text", name: "image_alt", widget: "string", required: false }
+          - { label: "Photo credit", name: "photo_credit", widget: "string", required: false }
+          - label: "Featured videos"
+            name: "videos"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "YouTube video ID", name: "youtube_id", widget: "string" }
+              - { label: "Title (Dance by Choreographer)", name: "title", widget: "string" }
+              - { label: "Event (e.g. Lake City Contra Dance, August 2025)", name: "event", widget: "string" }
 
-      # About page
       - label: "About Page"
         name: "about"
-        file: "src/pages/about.md"
+        file: "src/_data/about.json"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: Subtitle, name: subtitle, widget: string, required: false }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Meta Description",
-              name: "metaDescription",
-              widget: "text",
-              required: false,
-            }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "string" }
-              - { label: "Order", name: "order", widget: "number", default: 0 }
-
-      # Blog Page
-      - label: "Blog Page"
-        name: "blog"
-        file: "src/pages/blog.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Meta Description",
-              name: "metaDescription",
-              widget: "text",
-              required: false,
-            }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "string" }
-              - { label: "Order", name: "order", widget: "number", default: 0 }
-
-      # Projects Page
-      - label: "Projects Page"
-        name: "projects"
-        file: "src/pages/projects.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: Subtitle, name: subtitle, widget: string, required: false }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Meta Description",
-              name: "metaDescription",
-              widget: "text",
-              required: false,
-            }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "string" }
-              - { label: "Order", name: "order", widget: "number", default: 0 }
-
-      # Contact Page
-      - label: "Contact Page"
-        name: "contact"
-        file: "src/pages/contact.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - {
-              label: "Meta Description",
-              name: "metaDescription",
-              widget: "text",
-              required: false,
-            }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-            name: "eleventyNavigation"
-            widget: "object"
-            fields:
-              - { label: "Key", name: "key", widget: "string" }
-              - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Photo", name: "image", widget: "image", required: false }
+          - { label: "Photo alt text", name: "image_alt", widget: "string", required: false }
+          - { label: "Photo credit", name: "photo_credit", widget: "string", required: false }
