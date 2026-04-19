@@ -72,10 +72,10 @@ permalink: /gigs/previous/
                   <span class="program__content">
 
                     {# Own dance — linked to choreography page #}
-                    {% if dance.own %}
+                    {% if dance.slug %}
                       <a
                         class="program__title--own"
-                        href="/choreography/{{ dance.slug }}/"
+                        href="/choreography/#{{ dance.slug }}"
                       >{{ dance.title }}</a>
 
                     {# Everyone else — plain text #}
