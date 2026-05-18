@@ -1,4 +1,5 @@
 {
+  "$schema": "./gigs.schema.json",
   "year": 2026,
   "gigs": [
     {
@@ -109,7 +110,64 @@
       "series": "Corvallis Folklore Society",
       "series_url": "https://corvallisfolklore.org/home/contradancing/",
       "location": "Corvallis, OR",
-      "band": "TBA",
+      "band": "Peter and the Wolf Tones",
+      "band_members":"George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Get Me Going",
+            "author": "Lisa Greenleaf"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson"
+          },
+          {
+            "title": "Still Deciding",
+            "author": "David Smukler"
+          },
+          {
+            "title": "The Carousel",
+            "author": "Tom Hinds"
+          },
+          {
+            "title": "United We Dance",
+            "author": "Bob Isaacs"
+          },
+          {
+            "title": "Vote with your Feet",
+            "author": "Bob Isaacs"
+          },
+          {
+            "title": "The Button Push",
+            "author": "Gene Hubert"
+          },
+          {
+            "title": "I can't Believe it's not Butter",
+            "author": "Maia McCormick"
+          },
+          {
+            "title": "Read Between the Lines",
+            "author": "Bob Isaacs"
+          },
+          {
+            "title": "The Zen of Dance",
+            "author": "Chris Page"
+          },
+          {
+            "title": "Pizza Shop",
+            "author": "Yoyo Zhou"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "series": "Lake City Contra Dance",
+      "series_url": "https://www.seattledance.org/contra/lakecity/",
+      "location": "Seattle, WA",
+      "band": "John Parejko (fiddle), Koren Wake (fiddle), Anita Anderson (piano)",
       "program": {}
     },
     {

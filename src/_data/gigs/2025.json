@@ -1,4 +1,5 @@
 {
+  "$schema": "./gigs.schema.json",
   "year": 2025,
   "gigs": [
     {

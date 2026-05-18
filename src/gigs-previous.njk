@@ -71,20 +71,38 @@ permalink: /gigs/previous/
                   <span class="program__num">{{ loop.index }}</span>
                   <span class="program__content">
 
+                    {# Medley #}
+                    {% if dance.medley %}
+                      <span class="program__medley-label">Medley</span>
+                      <span class="program__medley-list">
+                        {% for piece in dance.medley %}
+                          <span class="program__medley-item">
+                            {% if piece.slug %}
+                              <a class="program__title--own" href="/choreography/#{{ piece.slug }}">{{ piece.title }}</a>
+                            {% else %}
+                              <span class="program__title">{{ piece.title }}</span>
+                            {% endif %}
+                            <span class="program__author">{{ piece.author }}</span>
+                          </span>
+                        {% endfor %}
+                      </span>
+
                     {# Own dance — linked to choreography page #}
-                    {% if dance.slug %}
+                    {% elif dance.slug %}
                       <a
                         class="program__title--own"
                         href="/choreography/#{{ dance.slug }}"
                       >{{ dance.title }}</a>
+                      {% if dance.author %}
+                        <span class="program__author">{{ dance.author }}</span>
+                      {% endif %}
 
                     {# Everyone else — plain text #}
                     {% else %}
                       <span class="program__title">{{ dance.title }}</span>
-                    {% endif %}
-
-                    {% if dance.author %}
-                      <span class="program__author">{{ dance.author }}</span>
+                      {% if dance.author %}
+                        <span class="program__author">{{ dance.author }}</span>
+                      {% endif %}
                     {% endif %}
 
                     {% if dance.video %}
