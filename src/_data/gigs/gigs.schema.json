@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Gigs Year File",
+  "type": "object",
+  "required": ["year", "gigs"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "gigs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "series", "location"],
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Date in YYYY-MM-DD format"
+          },
+          "series": {
+            "type": "string",
+            "description": "Name of dance serices"
+          },
+          "series_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "location": {
+            "type": "string",
+            "description": "City and state or country for the dance."
+          },
+          "band": {
+            "type": "string",
+            "description": "band name, e.g. Countercurrent"
+          },
+          "band_members": {
+            "type": "string",
+            "description": "People in band and their instruments, e.g. Brian Lindsay (fiddle, feet, vocals) and Alex Staurbaum (guitar, vocals)"
+          },
+          "program": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "break_after": {
+                "type": "integer",
+                "description": "Number of dances in the first half."
+              },
+              "notes": {
+                "type": "string"
+              },
+              "dances": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "author"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "author": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string",
+                      "description": "URL slug for dances authored by Caitlin"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
