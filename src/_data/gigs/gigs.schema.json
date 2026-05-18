@@ -43,6 +43,10 @@
             "type": "string",
             "description": "People in band and their instruments, e.g. Brian Lindsay (fiddle, feet, vocals) and Alex Staurbaum (guitar, vocals)"
           },
+          "band_url": {
+            "type": "string",
+            "format": "uri"
+          },
           "program": {
             "type": "object",
             "additionalProperties": false,
@@ -58,7 +62,6 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["title", "author"],
                   "additionalProperties": false,
                   "properties": {
                     "title": {
@@ -70,6 +73,27 @@
                     "slug": {
                       "type": "string",
                       "description": "URL slug for dances authored by Caitlin"
+                    },
+                    "medley": {
+                      "type": "array",
+                      "description": "List of dances called as a medley",
+                      "items": {
+                        "type": "object",
+                        "required": ["title", "author"],
+                        "additionalProperties": false,
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "author": {
+                            "type": "string"
+                          },
+                          "slug": {
+                            "type": "string",
+                            "description": "URL slug for dances authored by Caitlin"
+                          }
+                        }
+                      }
                     }
                   }
                 }

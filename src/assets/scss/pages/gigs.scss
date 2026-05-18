@@ -294,6 +294,35 @@
   color: var(--color-text-muted);
 }
 
+/* Medley */
+.program__medley-label {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.program__medley-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.program__medley-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: baseline;
+  padding-left: 1em;
+
+  &::before {
+    content: "•";
+    color: var(--color-text-muted);
+    margin-right: 2px;
+  }
+}
+
 /* Video link — rose */
 .program__video {
   font-size: 1.2rem;
