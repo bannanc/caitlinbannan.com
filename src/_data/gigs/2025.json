@@ -11,6 +11,7 @@
       "band_members": "Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)",
       "program": {
         "break_after": 5,
+        "notes": "Split the night, Ali Webb called the dances before the break, I called the second half.",
         "dances": [
           {
             "title": "Foxglove",
@@ -45,15 +46,14 @@
             "author": "Seth Tepfer"
           },
           {
-            "title": "Hi Honey, How was your Hey",
+            "title": "Hi Honey, How Was Your Hey",
             "author": "Bob Isaacs"
           },
           {
             "title": "A-1 Reel",
             "author": "Chris Weiler"
           }
-        ],
-        "notes": "Split the night, Ali Webb called the dances before the break, I called the second half."
+        ]
       }
     },
     {
@@ -100,10 +100,10 @@
           },
           {
             "title": "Winter in Summerland",
-            "author": "Jeff Spero and James Hutson"
+            "author": "James Hutson and Jeff Spero"
           },
           {
-            "title": "Leftovers (Contra Connection)",
+            "title": "Leftovers",
             "author": "Ben Werner"
           },
           {

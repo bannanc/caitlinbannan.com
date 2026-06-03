@@ -4,12 +4,13 @@
   "gigs": [
     {
       "date": "2024-01-06",
-      "series": "Albuquerque Contra Dance",
-      "location": "Albuquerque, NM",
+      "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
+      "location": "Albuquerque, NM",
       "band": "Adobe Brothers",
       "program": {
         "break_after": 5,
+        "notes": "First full night on my own.",
         "dances": [
           {
             "title": "Get Me Going",
@@ -52,9 +53,9 @@
     },
     {
       "date": "2024-03-01",
-      "series": "Albuquerque Contra Dance",
-      "location": "Albuquerque, NM",
+      "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
+      "location": "Albuquerque, NM",
       "band": "The Parson Sisters",
       "band_url": "https://theparsonsisters.com/",
       "band_members": "Mirinisa Stewart-Tengco (fiddle) and Clara Byom (piano and accordion)",
@@ -82,7 +83,7 @@
             "author": "Tanya Rotenberg"
           },
           {
-            "title": "Neighbor, Neighbor On the Wall",
+            "title": "Neighbor, Neighbor on the Wall",
             "author": "Maia McCormick"
           },
           {
@@ -90,7 +91,7 @@
             "author": "Yoyo Zhou"
           },
           {
-            "title": "The Boys from Urbana",
+            "title": "The Boys From Urbana",
             "author": "John Coffman"
           },
           {
@@ -102,12 +103,13 @@
     },
     {
       "date": "2024-03-23",
-      "series": "Santa Fe Contra Dance",
+      "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
       "band": "Santa Fe Megaband",
       "program": {
         "break_after": 6,
+        "notes": "Many dancers left after the break leaving us with mixers and a triplet in the second half.",
         "dances": [
           {
             "title": "Airpants",
@@ -134,20 +136,19 @@
             "author": "Chris Weiler"
           },
           {
-            "title": "I Think I Can",
+            "title": "I Think I Can Variation",
             "author": "Barry Dupen"
           },
           {
             "title": "Right and Left Triplet",
             "author": "Chris Page"
           }
-        ],
-        "notes": "Many dancers left after the break leaving us with mixers and a triplet in the second half."
+        ]
       }
     },
     {
       "date": "2024-07-12",
-      "series": "Santa Fe Contra Dance",
+      "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
       "band": "Turquoise Tuners",
@@ -165,7 +166,7 @@
             "author": "Jan Larsen"
           },
           {
-            "title": "I'll Hold You In My Arms",
+            "title": "I'll Hold You in My Arms",
             "author": "Maia McCormick"
           },
           {
@@ -197,7 +198,15 @@
             ]
           },
           {
-            "title": "2nd Hannover Triplet",
+            "title": "Accretion Reel",
+            "author": "Chris Page"
+          },
+          {
+            "title": "Petronella Milkshake",
+            "author": "Deanna Rubin"
+          },
+          {
+            "title": "2nd Hanover Triplet",
             "author": "Heiner Fischle"
           }
         ]
@@ -210,13 +219,14 @@
       "location": "Albuquerque, NM",
       "band": "Albuquerque Megaband",
       "program": {
+        "notes": "Albuquerque Folk Festival is a family friendly event highlighting all sorts of different folk traditions. There is no beginner lesson and the dances need to be approachable to any attendee.",
         "dances": [
           {
             "title": "La Bastringue",
-            "author": "Traditional"
+            "author": "Traditional French Canadian"
           },
           {
-            "title": "(New World) Festival Reel",
+            "title": "New World Festival Reel",
             "author": "Will Mentor"
           },
           {
@@ -227,13 +237,12 @@
             "title": "The Nice Combination",
             "author": "Gene Hubert"
           }
-        ],
-        "notes": "Albuquerque Folk Festival is a family friendly event highlighting all sorts of different folk traditions. There is no beginner lesson and the dances need to be approachable to any attendee."
+        ]
       }
     },
     {
       "date": "2024-11-23",
-      "series": "Santa Fe Contra Dance",
+      "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
       "band": "Santa Fe Megaband",
@@ -250,7 +259,7 @@
           },
           {
             "title": "La Bastringue",
-            "author": "Traditional"
+            "author": "Traditional French Canadian"
           },
           {
             "title": "The Nice Combination",
@@ -270,7 +279,7 @@
             "slug": "on_the_third_hand"
           },
           {
-            "title": "The Boys from Urbana",
+            "title": "The Boys From Urbana",
             "author": "John Coffman"
           },
           {

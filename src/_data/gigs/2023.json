@@ -4,42 +4,68 @@
   "gigs": [
     {
       "date": "2023-05-06",
-      "series": "Albuquerque Contra Dance",
+      "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
       "band": "Albuquerque Megaband",
       "program": {
+        "break_after": 5,
+        "notes": "First public night calling split with Ben Werner and Tristan Fin. I called dances 2, 4, and 6.",
         "dances": [
+          {
+            "title": "Berkeley Bind",
+            "author": "Erik Hoffman"
+          },
           {
             "title": "Hypnosis",
             "author": "Melanie Axel-Lute"
+          },
+          {
+            "title": "Suzie's Favorite",
+            "author": "Julian Clechner"
           },
           {
             "title": "Wrinkled Ribbon",
             "author": "Melanie Axel-Lute"
           },
           {
+            "title": "Star Trek",
+            "author": "Mike Richardson"
+          },
+          {
             "title": "Tika Tika Timing",
             "author": "Dean Snipes"
+          },
+          {
+            "title": "Cows Are Watching",
+            "author": "Bill Pope and Judy Goldsmith"
+          },
+          {
+            "title": "Chinese New Year",
+            "author": "Chris Page"
+          },
+          {
+            "title": "The Erik Effect",
+            "author": "Ben Werner and Danielle Boudreau"
           }
-        ],
-        "notes": "First public night calling split with Ben Werner and Tristan Fin."
+        ]
       }
     },
     {
       "date": "2023-07-08",
-      "series": "Santa Fe Contra Dance",
+      "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
       "band": "Santa Fe Megaband",
       "program": {
+        "notes": "Open caller night in Santa Fe.",
         "dances": [
           {
             "title": "Thanks to the Gene",
             "author": "Tom Hinds"
           },
           {
-            "title": "Travels with Rick and Kim",
+            "title": "Travels With Rick and Kim",
             "author": "Shari Miller-Johnson"
           },
           {
@@ -47,16 +73,15 @@
             "author": "Tony Parkes"
           },
           {
-            "title": "Neighbor, Neighbor On the Wall",
+            "title": "Neighbor, Neighbor on the Wall",
             "author": "Maia McCormick"
           }
-        ],
-        "notes": "Open caller night in Santa Fe."
+        ]
       }
     },
     {
       "date": "2023-12-02",
-      "series": "Albuquerque Contra Dance",
+      "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
       "band": "Cheap Shots",
@@ -64,6 +89,7 @@
       "band_members": "Erika Gerety (bass and vocals), Peter Esherick (hammered dulcimer and mandolin), John Brinduse (piano), Bill Balassi (guitar and mandolin), and Pat Aruffo (fiddle)",
       "program": {
         "break_after": 6,
+        "notes": "Split the night with Ben Werner, I called the first half.",
         "dances": [
           {
             "title": "Airpants",
@@ -82,7 +108,7 @@
             "author": "David Harris"
           },
           {
-            "title": "Leftovers (Contra Connection)",
+            "title": "Leftovers",
             "author": "Ben Werner"
           },
           {
@@ -102,7 +128,7 @@
             "author": "Gene Hubert"
           },
           {
-            "title": "Neighbor, Neighbor On the Wall",
+            "title": "Neighbor, Neighbor on the Wall",
             "author": "Maia McCormick"
           }
         ]
