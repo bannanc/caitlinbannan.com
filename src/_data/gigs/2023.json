@@ -5,7 +5,7 @@
     {
       "date": "2023-05-06",
       "series": "Albuquerque Contra Dance",
-      "series_url":"https://folkmads.org/",
+      "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
       "band": "Albuquerque Megaband",
       "program": {
@@ -57,11 +57,11 @@
     {
       "date": "2023-12-02",
       "series": "Albuquerque Contra Dance",
-      "series_url":"https://folkmads.org/",
+      "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
       "band": "Cheap Shots",
-      "band_url":"https://mycheapshots.com/home/",
-      "band_members":"Erika Gerety (bass and vocals), Peter Esherick (hammered dulcimer and mandolin), John Brinduse (piano), Bill Balassi (guitar and mandolin), and Pat Aruffo (fiddle)",
+      "band_url": "https://mycheapshots.com/home/",
+      "band_members": "Erika Gerety (bass and vocals), Peter Esherick (hammered dulcimer and mandolin), John Brinduse (piano), Bill Balassi (guitar and mandolin), and Pat Aruffo (fiddle)",
       "program": {
         "break_after": 6,
         "dances": [
@@ -86,7 +86,7 @@
             "author": "Ben Werner"
           },
           {
-            "title":"Train Delay",
+            "title": "Train Delay",
             "author": "Maia McCormick"
           },
           {
@@ -110,4 +110,3 @@
     }
   ]
 }
-

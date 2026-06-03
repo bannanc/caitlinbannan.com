@@ -62,7 +62,7 @@
       "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
       "band": "Riffraff",
-      "band_members": "Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)",
+      "band_members": "Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhran), and Jesse Partridge (fiddle, piano)",
       "program": {
         "break_after": 5,
         "dances": [
@@ -72,7 +72,8 @@
           },
           {
             "title": "Easy Street",
-            "author": "Bob Isaacs"},
+            "author": "Bob Isaacs"
+          },
           {
             "title": "I'll Hold You in My Arms",
             "author": "Maia McCormick"
@@ -106,12 +107,12 @@
       }
     },
     {
-      "date":"2026-05-16",
+      "date": "2026-05-16",
       "series": "Corvallis Folklore Society",
       "series_url": "https://corvallisfolklore.org/home/contradancing/",
       "location": "Corvallis, OR",
       "band": "Peter and the Wolf Tones",
-      "band_members":"George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
+      "band_members": "George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
       "program": {
         "break_after": 6,
         "dances": [
@@ -171,7 +172,7 @@
       "program": {}
     },
     {
-      "date":"2026-07-24",
+      "date": "2026-07-24",
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
@@ -180,7 +181,7 @@
       "program": {}
     },
     {
-      "date":"2026-09-19",
+      "date": "2026-09-19",
       "series": "Ottawa Contra Dance",
       "series_url": "https://ottawacontra.ca/",
       "location": "Ottawa, Ontario, Canada",
@@ -188,7 +189,7 @@
       "program": {}
     },
     {
-      "date":"2026-11-28",
+      "date": "2026-11-28",
       "series": "Portland Country Dance Community",
       "series_url": "https://portlandcountrydance.org/",
       "location": "Portland, OR",
@@ -197,4 +198,3 @@
     }
   ]
 }
-

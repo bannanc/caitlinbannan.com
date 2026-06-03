@@ -62,8 +62,8 @@
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
       "band": "Countercurrent",
-      "band_url":"https://countercurrentmusic.com/",
-      "band_members":"Alex Sturbaum (guitar, vocals) and Brian Lindsay (fiddle, foot percussion, vocals)",
+      "band_url": "https://countercurrentmusic.com/",
+      "band_members": "Alex Sturbaum (guitar, vocals) and Brian Lindsay (fiddle, foot percussion, vocals)",
       "program": {
         "break_after": 6,
         "notes": "Split the night, I called the first half, Abigail Golden called everything after the break.",
@@ -146,7 +146,7 @@
             "video": "https://youtu.be/QW8iY2yQAxk?si=cGhuCKLgev5QuEKW"
           },
           {
-            "title":"Train Delay",
+            "title": "Train Delay",
             "author": "Maia McCormick",
             "video": "https://youtu.be/3XnNUj3rLbU?si=3XXbZETx0VqODZOy"
           },
@@ -163,7 +163,7 @@
             "author": "Rich Goss"
           },
           {
-            "title":"A Stroll in the Hey",
+            "title": "A Stroll in the Hey",
             "author": "Jacqui Grennan"
           }
         ]
@@ -171,4 +171,3 @@
     }
   ]
 }
-
