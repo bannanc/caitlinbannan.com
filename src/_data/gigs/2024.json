@@ -6,7 +6,7 @@
       "date": "2024-01-06",
       "series": "Albuquerque Contra Dance",
       "location": "Albuquerque, NM",
-      "series_url":"https://folkmads.org/",
+      "series_url": "https://folkmads.org/",
       "band": "Adobe Brothers",
       "program": {
         "break_after": 5,
@@ -54,10 +54,10 @@
       "date": "2024-03-01",
       "series": "Albuquerque Contra Dance",
       "location": "Albuquerque, NM",
-      "series_url":"https://folkmads.org/",
+      "series_url": "https://folkmads.org/",
       "band": "The Parson Sisters",
-      "band_url":"https://theparsonsisters.com/",
-      "band_members":"Mirinisa Stewart-Tengco (fiddle) and Clara Byom (piano and accordion)",
+      "band_url": "https://theparsonsisters.com/",
+      "band_members": "Mirinisa Stewart-Tengco (fiddle) and Clara Byom (piano and accordion)",
       "program": {
         "break_after": 5,
         "dances": [
@@ -101,7 +101,7 @@
       }
     },
     {
-      "date": "2024-03-24",
+      "date": "2024-03-23",
       "series": "Santa Fe Contra Dance",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
@@ -152,7 +152,7 @@
       "location": "Santa Fe, NM",
       "band": "Turquoise Tuners",
       "band_url": "https://sites.google.com/view/the-turquoise-tuners/home/",
-      "band_members":"Nick Kunz (guitar and banjo), Sofia Kunz (fiddle), Liliana Reid (fiddle), Eric Carlson (banjo, fiddle, and guitar), and Sam Carlson (fiddle)",
+      "band_members": "Nick Kunz (guitar and banjo), Sofia Kunz (fiddle), Liliana Reid (fiddle), Eric Carlson (banjo, fiddle, and guitar), and Sam Carlson (fiddle)",
       "program": {
         "break_after": 6,
         "dances": [
@@ -282,4 +282,3 @@
     }
   ]
 }
-
