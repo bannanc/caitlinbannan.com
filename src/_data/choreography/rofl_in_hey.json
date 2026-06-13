@@ -1,29 +1,27 @@
 {
   "title": "ROFL in Hey",
-  "formation": "Duple Minor - Becket",
+  "formation": "Duple Minor - Becket CW",
   "progression": "Single Progression",
-  "data": "2025-11-15",
   "figures": [
     {
       "section": "A1",
       "moves": [
-        "Circle left 3/4, pass through",
-        "New neighbor do-si-do"
+        "Circle left 3/4",
+        "Pass through along (NR)",
+        "N2 neighbor do-si-do"
       ]
     },
     {
       "section": "A2",
       "moves": [
-        "Neighbor swing",
+        "N2 neighbor swing",
         "Robins right shoulder round 1 1/2"
       ]
     },
     {
       "section": "B1",
       "moves": [
-        "Robin 2 follow robin 1, robin 1 passes their partner by the left to start a dolphin hey",
-        "(Robins&Lark1 Left, Larks right, robins&lark2 left, ...)",
-        "End hey by robin2 looping back to partner"
+        "Dolphin hey 1 (Robins pass L1 to start)"
       ]
     },
     {

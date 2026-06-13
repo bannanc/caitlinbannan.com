@@ -1,41 +1,43 @@
 {
   "title": "Forbidden Shadows",
-  "formation": "Duple Minor - Becket",
+  "formation": "Duple Minor - Becket CW",
   "progression": "Single Progression",
   "date": "2026-04-16",
   "figures": [
     {
       "section": "A1",
       "moves": [
-          "Slide left, revolving door (Partner Star Prom 1/2, robins allemande right 1/2)",
-          "Neighbor Swing"
+        "Shift left",
+        "Revolvingg door",
+        "Neighbor swing"
       ]
     },
     {
       "section": "A2",
       "moves": [
-        "Larks Rocochet, full hey",
-        "(Larks Ricochet, Neigh R, Robins L, Part R, Lark L, Neigh R, Robins L)"
+        "Ricochet hey (La Ricochet;NR;RoL;PR;LaL;NR;RoL)"
       ]
     },
     {
       "section": "B1",
       "moves": [
-        "Partner RH 1/4, Shadow 1 Left shoulder 1",
-        "Pass partner right, Shadow 2 Left shoulder 1"
+        "Pass partner right",
+        "Shadow 1 left shoulder round",
+        "Pass partner right",
+        "Shadow 2 left shoulder round"
       ]
     },
     {
       "section": "B2",
       "moves": [
-        "Partner Right shoulder round",
-        "Partner Swing"
+        "Partner right shoulder round",
+        "Partner swing"
       ]
     }
   ],
   "notes": [
-      "Significant shadow interaction",
-      "Rochelle Hodge told me once that when your shadow becomes your neighbor, swinging them feels forbidden. This inspired the choreography in the B.",
-      "Teaching note -- Before you begin, look passed your partner to see shadow 1. Turn away from your partner to see shadow 2."
-    ]
+    "Significant shadow interaction",
+    "Rochelle Hodge told me once that when your shadow becomes your neighbor, swinging them feels forbidden. This inspired the choreography in the B.",
+    "Teaching note -- Before you begin, look passed your partner to see shadow 1. Turn away from your partner to see shadow 2."
+  ]
 }
