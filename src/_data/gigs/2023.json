@@ -52,34 +52,6 @@
       }
     },
     {
-      "date": "2023-07-08",
-      "series": "Santa Fe Contra",
-      "series_url": "https://folkmads.org/",
-      "location": "Santa Fe, NM",
-      "band": "Santa Fe Megaband",
-      "program": {
-        "notes": "Open caller night in Santa Fe.",
-        "dances": [
-          {
-            "title": "Thanks to the Gene",
-            "author": "Tom Hinds"
-          },
-          {
-            "title": "Travels With Rick and Kim",
-            "author": "Shari Miller-Johnson"
-          },
-          {
-            "title": "Meshach's March",
-            "author": "Tony Parkes"
-          },
-          {
-            "title": "Neighbor, Neighbor on the Wall",
-            "author": "Maia McCormick"
-          }
-        ]
-      }
-    },
-    {
       "date": "2023-12-02",
       "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
