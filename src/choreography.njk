@@ -34,12 +34,19 @@ eleventyNavigation:
               <span class="choreo-index__divider">·</span>
               <span class="choreo-index__meta">{{ dance.progression }}</span>
             {% endif %}
-            {% if not dance["co-author"] and dance.notes and dance.notes.length > 0 %}
+            {% set hasCoAuthors = (dance["co-authors"] and dance["co-authors"].length) or dance["co-author"] %}
+            {% if not hasCoAuthors and dance.notes and dance.notes.length > 0 %}
               <span class="choreo-index__divider">—</span>
               <span class="choreo-index__desc">{{ dance.notes[0] | truncate(80) }}</span>
             {% endif %}
           </div>
-          {% if dance["co-author"] %}
+          {% if dance["co-authors"] and dance["co-authors"].length %}
+            <p class="choreo-index__coauthor">Choreographed with
+              {% for ca in dance["co-authors"] %}
+                {% if ca.url %}<a href="{{ ca.url }}" target="_blank" rel="noopener">{{ ca.name }} ↗</a>{% else %}{{ ca.name }}{% endif %}{% if not loop.last %} &amp; {% endif %}
+              {% endfor %}
+            </p>
+          {% elif dance["co-author"] %}
             <p class="choreo-index__coauthor">Choreographed with
               {% if dance["co-author-url"] %}
                 <a href="{{ dance['co-author-url'] }}" target="_blank" rel="noopener">{{ dance["co-author"] }} ↗</a>
@@ -63,7 +70,13 @@ eleventyNavigation:
         {# Card header #}
         <div class="dance-card__header">
           <h2 class="dance-card__title">{{ dance.title }}</h2>
-          {% if dance["co-author"] %}
+          {% if dance["co-authors"] and dance["co-authors"].length %}
+            <p class="dance-card__coauthor">Choreographed with
+              {% for ca in dance["co-authors"] %}
+                {% if ca.url %}<a href="{{ ca.url }}" target="_blank" rel="noopener">{{ ca.name }} ↗</a>{% else %}{{ ca.name }}{% endif %}{% if not loop.last %} &amp; {% endif %}
+              {% endfor %}
+            </p>
+          {% elif dance["co-author"] %}
             <p class="dance-card__coauthor">Choreographed with
               {% if dance["co-author-url"] %}
                 <a href="{{ dance['co-author-url'] }}" target="_blank" rel="noopener">{{ dance["co-author"] }} ↗</a>
