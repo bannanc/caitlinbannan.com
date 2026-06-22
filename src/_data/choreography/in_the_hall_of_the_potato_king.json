@@ -1,37 +1,36 @@
 {
   "title": "In the Hall of the Potato King",
-  "co-author":"Sarah Trop",
-  "co-author-url":"https://sarahtrop.com/",
-  "formation": "Duple Minor - Becket",
+  "formation": "Duple Minor - Becket CW",
   "progression": "Double Progression",
   "date": "2026-04-12",
   "figures": [
     {
       "section": "A1",
       "moves": [
-        "Left diagonal right and left through",
-        "New robins allemande right 1"
+        "On the left diagonal, right and left through with new neighbor",
+        "Robins allemande right 1"
       ]
     },
     {
       "section": "A2",
       "moves": [
-        "Larks allemende left once a little more (6)",
-        "Robins fall behind for hands across star all the way around (8)",
-        "Switcheroo (2) (Larks dip right hand under left arm, box the gnat)"
+        "Larks allemande left 1 & 1/4",
+        "Robins join behind their partner",
+        "Hands-across star left 1",
+        "Switcheroo (larks right hand under star then box the gnat)"
       ]
     },
     {
       "section": "B1",
       "moves": [
-        "Larks pass left full hey"
+        "Hey (LaL;NR;RoL;PR;LaL;NR;RoL)"
       ]
     },
     {
       "section": "B2",
       "moves": [
-        "Larks lead single file promenade across the set",
-        "Partner swing on home side"
+        "Larks lead single file promenade across",
+        "Partner swing"
       ]
     }
   ],
@@ -39,5 +38,11 @@
     "Written with Sarah Trop for Queer Camp 2026.",
     "This dance was written as part of a workshop for Queer Camp April 2026, to tell a story about stealing potatoes.",
     "Feel free to reach out to Sarah or me if you'd like to hear more about the story. Or Listen to Emma Azelborn's song called 'Royal Potatoes'"
-    ]
+  ],
+  "co-authors": [
+    {
+      "name": "Sarah Trop",
+      "url": "https://sarahtrop.com/"
+    }
+  ]
 }

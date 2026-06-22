@@ -18,7 +18,7 @@
             "author": "Lisa Greenleaf"
           },
           {
-            "title": "Back to Back Variation",
+            "title": "Back to Back Variant",
             "author": "Isaac Banner"
           },
           {
@@ -50,8 +50,8 @@
             "author": "Susan Petrick"
           },
           {
-            "title": "And Thinking about Coffee Cups Variant",
-            "author": "Michael Furst"
+            "title": "And Thinking About Coffee Cups, Variant",
+            "author": "Michael Fuerst"
           }
         ]
       }
@@ -68,11 +68,12 @@
         "dances": [
           {
             "title": "Easy Peasy",
-            "author": "Diana Silver"
+            "author": "Diane Silver"
           },
           {
             "title": "Easy Street",
-            "author": "Bob Isaacs"},
+            "author": "Bob Isaacs"
+          },
           {
             "title": "I'll Hold You in My Arms",
             "author": "Maia McCormick"
@@ -90,7 +91,7 @@
             "author": "Maia McCormick"
           },
           {
-            "title": "Zig it Right",
+            "title": "Zig It Right",
             "author": "Caitlin Bannan",
             "slug": "zig_it_right"
           },
@@ -99,19 +100,19 @@
             "author": "James Hutson"
           },
           {
-            "title": "Hume Foggg Reel",
+            "title": "Hume Fogg Reel",
             "author": "Susan Kevra"
           }
         ]
       }
     },
     {
-      "date":"2026-05-16",
+      "date": "2026-05-16",
       "series": "Corvallis Folklore Society",
       "series_url": "https://corvallisfolklore.org/home/contradancing/",
       "location": "Corvallis, OR",
       "band": "Peter and the Wolf Tones",
-      "band_members":"George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
+      "band_members": "George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
       "program": {
         "break_after": 6,
         "dances": [
@@ -136,7 +137,7 @@
             "author": "Bob Isaacs"
           },
           {
-            "title": "Vote with your Feet",
+            "title": "Vote With Your Feet",
             "author": "Bob Isaacs"
           },
           {
@@ -144,7 +145,7 @@
             "author": "Gene Hubert"
           },
           {
-            "title": "I can't Believe it's not Butter",
+            "title": "I Can't Believe Its Not Butter",
             "author": "Maia McCormick"
           },
           {
@@ -171,16 +172,16 @@
       "program": {}
     },
     {
-      "date":"2026-07-24",
+      "date": "2026-07-24",
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "The Electrodes",
-      "band_members": "Joe Bowbear (electric fiddle), Joe Micheals (guitar), Marcy Kubbs (piano)",
+      "band": "Heliotrope",
+      "band_members": "Robin Brown (fiddle), Michael Hobart (guitar), Paul Englesberg (flute and concertina), and Greg Sherman (bass)",
       "program": {}
     },
     {
-      "date":"2026-09-19",
+      "date": "2026-09-19",
       "series": "Ottawa Contra Dance",
       "series_url": "https://ottawacontra.ca/",
       "location": "Ottawa, Ontario, Canada",
@@ -188,7 +189,19 @@
       "program": {}
     },
     {
-      "date":"2026-11-28",
+      "date": "2026-10-10",
+      "series": "Bellingham Country Dance Society",
+      "series_url": "https://bellinghamcountrydance.org/",
+      "location": "Bellingham, WA",
+      "band": "Springtide",
+      "band_url": "https://www.springtidetrio.com/",
+      "band_members": "Willy Clemetson (fiddle and foot percussion), Elsie Gawler (cello and fiddle), and Ethan Tischler (guitar)",
+      "program": {
+        "notes": "This event will be held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/"
+      }
+    },
+    {
+      "date": "2026-11-28",
       "series": "Portland Country Dance Community",
       "series_url": "https://portlandcountrydance.org/",
       "location": "Portland, OR",
@@ -197,4 +210,3 @@
     }
   ]
 }
-
