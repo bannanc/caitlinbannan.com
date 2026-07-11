@@ -1,0 +1,43 @@
+{
+  "title": "Shadow Slide",
+  "formation": "Duple Minor - Becket CW",
+  "progression": "Single Progression",
+  "date": "2026-07-06",
+  "figures": [
+    {
+      "section": "A1",
+      "moves": [
+        "Slice left forward",
+        "Larks draw neighbor robin to their side",
+        "Neighbor swing"
+      ]
+    },
+    {
+      "section": "A2",
+      "moves": [
+        "Neighbor promenade across",
+        "Star Left 3/4"
+      ]
+    },
+    {
+      "section": "B1",
+      "moves": [
+        "Balance long waves R/L",
+        "Slide right (past shadow)",
+        "Balance long waves L/R",
+        "Slide left (past shadow)"
+      ]
+    },
+    {
+      "section": "B2",
+      "moves": [
+        "Partner balance",
+        "Partner swing"
+      ]
+    }
+  ],
+  "notes": [
+    "Rory O'Moores with your shadow.",
+    "I was looking for a dance with Rory O'Moores that didn't have a circle left or robins chain, but did have a promenade to meet some teaching and programming goals."
+  ]
+}

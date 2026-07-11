@@ -169,7 +169,55 @@
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
       "band": "John Parejko (fiddle), Koren Wake (fiddle), Anita Anderson (piano)",
-      "program": {}
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Get Me Going",
+            "author": "Lisa Greenleaf"
+          },
+          {
+            "title": "Pigeon-hey Principle",
+            "author": "Isaac Banner"
+          },
+          {
+            "title": "Shadow Slide",
+            "author": "Caitlin Bannan",
+            "slug": "shadow_slide"
+          },
+          {
+            "title": "Laura's March",
+            "author": "Isaac Banner"
+          },
+          {
+            "title": "The Scenic Route",
+            "author": "Chris Page",
+            "video": "https://youtu.be/_Dbg-Z3x5wY?si=UobsB6YZGNcu8eIj"
+          },
+          {
+            "title": "Click Your Heels",
+            "author": "Bob Isaacs",
+            "video": "https://youtu.be/zeiY4Q6JZsA?si=glWtVyb8MW38cmi4"
+          },
+          {
+            "title": "A Last Hurrah",
+            "author": "Erik Hoffman"
+          },
+          {
+            "title": "To Mike, from Jennifer",
+            "author": "Luke Donforth"
+          },
+          {
+            "title": "Trip to Peterborough",
+            "author": "Rick Mohr"
+          },
+          {
+            "title": "Zig It Right",
+            "author": "Caitlin Bannan",
+            "slug": "zig_it_right"
+          }
+        ]
+      }
     },
     {
       "date": "2026-07-24",
