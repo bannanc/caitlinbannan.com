@@ -228,7 +228,51 @@
       "location": "Seattle, WA",
       "band": "Heliotrope",
       "band_members": "Robin Brown (fiddle), Michael Hobart (guitar), Paul Englesberg (flute and concertina), and Greg Sherman (bass)",
-      "program": {}
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "Foxglove",
+            "author": "Tom Thoureau"
+          },
+          {
+            "title": "Saturday Night Line",
+            "author": "Joseph Pimentel"
+          },
+          {
+            "title": "Five Minute Warning (Isaac)",
+            "author": "Nicholas Rockstroh"
+          },
+          {
+            "title": "Stir Crazy",
+            "author": "Erik Weberg"
+          },
+          {
+            "title": "Harmony Hey",
+            "author": "Tom Lehman"
+          },
+          {
+            "title": "Back to Front",
+            "author": "Luke Donforth"
+          },
+          {
+            "title": "Barack Me, Obamadeus",
+            "author": "Maia McCormick"
+          },
+          {
+            "title": "Diana's Delight",
+            "author": "Yoyo Zhou"
+          },
+          {
+            "title": "Three Thirty-three",
+            "author": "Steve Zakon-Anderson"
+          },
+          {
+            "title": "Winter Storm",
+            "author": "Linda Leslie"
+          }
+        ]
+      }
     },
     {
       "date": "2026-09-19",
