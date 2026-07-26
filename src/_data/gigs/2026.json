@@ -168,7 +168,7 @@
       "series": "Lake City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
-      "band": "John Parejko (fiddle), Koren Wake (fiddle), Anita Anderson (piano)",
+      "band": "John Parejko (fiddle and foot percussion), Koren Wake (fiddle), Anita Anderson (piano)",
       "program": {
         "break_after": 6,
         "dances": [
@@ -183,7 +183,8 @@
           {
             "title": "Shadow Slide",
             "author": "Caitlin Bannan",
-            "slug": "shadow_slide"
+            "slug": "shadow_slide",
+            "video": "https://youtu.be/R71rbxLxwxQ?si=G4lOL_BMk0GsuzVX"
           },
           {
             "title": "Laura's March",
@@ -214,7 +215,8 @@
           {
             "title": "Zig It Right",
             "author": "Caitlin Bannan",
-            "slug": "zig_it_right"
+            "slug": "zig_it_right",
+            "video": "https://youtu.be/O-zYdwModG4?si=tGnEMuG7-_sGDtq3"
           }
         ]
       }
