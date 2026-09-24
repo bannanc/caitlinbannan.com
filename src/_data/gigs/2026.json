@@ -280,7 +280,59 @@
       "series_url": "https://ottawacontra.ca/",
       "location": "Ottawa, Ontario, Canada",
       "band": "TBA",
-      "program": {}
+      "program": {
+        "break_after": 6,
+        "dances": [
+          {
+            "title": "The Baby Rose",
+            "author": "David Kaynor"
+          },
+          {
+            "title": "Love and Twirls",
+            "author": "James Hutson"
+          },
+          {
+            "title": "Suzie's Favorite",
+            "author": "Julian Clechner"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson"
+          },
+          {
+            "title": "Amble on East",
+            "author": "Angela DeCarlis"
+          },
+          {
+            "title": "Mary Cay's Reel",
+            "author": "David Kaynor"
+          },
+          {
+            "title": "First Dance",
+            "author": "Don Flaherty"
+          },
+          {
+            "title": "I Can't Believe Its Not Butter",
+            "author": "Maia McCormick"
+          },
+          {
+            "title": "Earl and Squirrel",
+            "author": "Chris Weiler"
+          },
+          {
+            "title": "The Morning Commute Cis Hinkle Variation",
+            "author": "Bob Isaacs and Check Abell"
+          },
+          {
+            "title": "So It Might Be",
+            "author": "Luke Donforth"
+          },
+          {
+            "title": "Homeward Bound",
+            "author": "Andrea Nettleton"
+          }
+        ]
+      }
     },
     {
       "date": "2026-10-10",
@@ -299,7 +351,9 @@
       "series": "Portland Country Dance Community",
       "series_url": "https://portlandcountrydance.org/",
       "location": "Portland, OR",
-      "band": "TBA",
+      "band": "Starshine",
+      "band_url": "https://www.instagram.com/starshinetheband/",
+      "band_members": "Anne Peterson, Brooke Tanner, Gabriel Pope, Matt Gimpelevitch, Nathan Brazil, and Claire Williams",
       "program": {}
     }
   ]
