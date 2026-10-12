@@ -343,7 +343,42 @@
       "band_url": "https://www.springtidetrio.com/",
       "band_members": "Willy Clemetson (fiddle and foot percussion), Elsie Gawler (cello and fiddle), and Ethan Tischler (guitar)",
       "program": {
-        "notes": "This event will be held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/"
+        "break_after": 6,
+        "notes": "This event will be held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/",
+        "dances": [
+          {
+            "title": "Festival Reel 2",
+            "author": "Will Mentor"
+          },
+          {
+            "title": "Festival Chains - Star Variation",
+            "author": "Will Mentor and my Variation"
+          },
+          {
+            "title": "Salmonella Evening",
+            "author": "Steve Zakon-Anderson"
+          },
+          {
+            "title": "Laura's March",
+            "author": "Isaac Banner"
+          },
+          {
+            "title": "Trust",
+            "author": "Chris Page"
+          },
+          {
+            "title": "Peace Thru Dance",
+            "author": "Perry Shafran"
+          },
+          {
+            "title": "Foxglove",
+            "author": "Tom Thoureau"
+          },
+          {
+            "title": "Love and Twirls",
+            "author": "James Hutson"
+          }
+        ]
       }
     },
     {
