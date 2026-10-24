@@ -7,7 +7,11 @@
       "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
-      "band": "Adobe Brothers",
+      "bands": [
+        {
+          "name": "Adobe Brothers"
+        }
+      ],
       "program": {
         "break_after": 5,
         "notes": "First full night on my own.",
@@ -56,9 +60,13 @@
       "series": "Albuquerque Contra",
       "series_url": "https://folkmads.org/",
       "location": "Albuquerque, NM",
-      "band": "The Parson Sisters",
-      "band_url": "https://theparsonsisters.com/",
-      "band_members": "Mirinisa Stewart-Tengco (fiddle) and Clara Byom (piano and accordion)",
+      "bands": [
+        {
+          "name": "The Parson Sisters",
+          "url": "https://theparsonsisters.com/",
+          "members": "Mirinisa Stewart-Tengco (fiddle) and Clara Byom (piano and accordion)"
+        }
+      ],
       "program": {
         "break_after": 5,
         "dances": [
@@ -106,7 +114,11 @@
       "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
-      "band": "Santa Fe Megaband",
+      "bands": [
+        {
+          "name": "Santa Fe Megaband"
+        }
+      ],
       "program": {
         "break_after": 6,
         "notes": "Many dancers left after the break leaving us with mixers and a triplet in the second half.",
@@ -151,9 +163,13 @@
       "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
-      "band": "Turquoise Tuners",
-      "band_url": "https://sites.google.com/view/the-turquoise-tuners/home/",
-      "band_members": "Nick Kunz (guitar and banjo), Sofia Kunz (fiddle), Liliana Reid (fiddle), Eric Carlson (banjo, fiddle, and guitar), and Sam Carlson (fiddle)",
+      "bands": [
+        {
+          "name": "Turquoise Tuners",
+          "url": "https://sites.google.com/view/the-turquoise-tuners/home/",
+          "members": "Nick Kunz (guitar and banjo), Sofia Kunz (fiddle), Liliana Reid (fiddle), Eric Carlson (banjo, fiddle, and guitar), and Sam Carlson (fiddle)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [
@@ -209,7 +225,11 @@
       "series": "Albuquerque Folk Festival - Contra Dance Workshop",
       "series_url": "https://abqfolkfest.org/index.shtml",
       "location": "Albuquerque, NM",
-      "band": "Albuquerque Megaband",
+      "bands": [
+        {
+          "name": "Albuquerque Megaband"
+        }
+      ],
       "program": {
         "notes": "Albuquerque Folk Festival is a family friendly event highlighting all sorts of different folk traditions. There is no beginner lesson and the dances need to be approachable to any attendee.",
         "dances": [
@@ -237,7 +257,11 @@
       "series": "Santa Fe Contra",
       "series_url": "https://folkmads.org/",
       "location": "Santa Fe, NM",
-      "band": "Santa Fe Megaband",
+      "bands": [
+        {
+          "name": "Santa Fe Megaband"
+        }
+      ],
       "program": {
         "break_after": 5,
         "dances": [

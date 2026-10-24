@@ -7,8 +7,12 @@
       "series": "Emerald City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Snail Haven",
-      "band_members": "Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)",
+      "bands": [
+        {
+          "name": "Snail Haven",
+          "members": "Hayden  Stern (fiddle), Vienna Scheyer (fiddle), and Sam Vogt (guitar)"
+        }
+      ],
       "program": {
         "break_after": 5,
         "notes": "Split the night, Ali Webb called the dances before the break, I called the second half.",
@@ -61,9 +65,13 @@
       "series": "Lake City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
-      "band": "Countercurrent",
-      "band_url": "https://countercurrentmusic.com/",
-      "band_members": "Alex Sturbaum (guitar, vocals) and Brian Lindsay (fiddle, foot percussion, vocals)",
+      "bands": [
+        {
+          "name": "Countercurrent",
+          "url": "https://countercurrentmusic.com/",
+          "members": "Alex Sturbaum (guitar, vocals) and Brian Lindsay (fiddle, foot percussion, vocals)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "notes": "Split the night, I called the first half, Abigail Golden called everything after the break.",
@@ -119,8 +127,12 @@
       "series": "Lake City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
-      "band": "Beregovski's All Stars",
-      "band_members": "Laurie Andres (accordion), Jimmy Austin (trombone), W.B. Reid (banjo guitar), and Carl Shutoff (clarinet)",
+      "bands": [
+        {
+          "name": "Beregovski's All Stars",
+          "members": "Laurie Andres (accordion), Jimmy Austin (trombone), W.B. Reid (banjo guitar), and Carl Shutoff (clarinet)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [

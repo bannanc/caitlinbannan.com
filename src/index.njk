@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+{% from "macros/program.njk" import sessionNames, bandList %}
 
 {# ---- Hero ---- #}
 <section class="hero">
@@ -53,7 +54,7 @@ eleventyNavigation:
               {{ gig.date | date("MMM yyyy") }}
             </p>
             <p class="gig-card__date">
-              {{ gig.date | date("EEE, MMM d") }}
+              {{ gig.date | gigDates(gig.end_date, true) }}
             </p>
             <div>
               {% if gig.series_url %}
@@ -65,16 +66,10 @@ eleventyNavigation:
               {% endif %}
               <p class="gig-card__location">{{ gig.location }}</p>
             </div>
-            {% if gig.band and gig.band != "TBA" %}
-              <div>
-                <p class="gig-card__band">{{ gig.band }}</p>
-                {% if gig.band_members %}
-                  <p class="gig-card__band-members">{{ gig.band_members }}</p>
-                {% endif %}
-              </div>
-            {% else %}
-              <p class="gig-card__tba">Band TBA</p>
-            {% endif %}
+            <div class="gig-card__bands">
+              {{ bandList(gig, "gig-card") }}
+            </div>
+            {{ sessionNames(gig, "gig-card") }}
           </article>
         {% endfor %}
       </div>

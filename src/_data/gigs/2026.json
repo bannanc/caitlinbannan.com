@@ -7,8 +7,12 @@
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Fortified",
-      "band_members": "Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)",
+      "bands": [
+        {
+          "name": "Fortified",
+          "members": "Steve Blum-Anderson (Fiddle), Brad Reynolds (Accordion), and Jay Finkelstein (Guitar)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "notes": "Marshall Gould did 2 guest caller slots. He called dances 3 and 4.",
@@ -61,8 +65,12 @@
       "series": "Olympia Contra Dance",
       "series_url": "https://oly-wa.us/southbaygrange/contra.php",
       "location": "Olympia, WA",
-      "band": "Riffraff",
-      "band_members": "Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)",
+      "bands": [
+        {
+          "name": "Riffraff",
+          "members": "Evo Toney (fiddle, mandolin, vocals), Alex Sturbaum (guitar, accordion, bodhrán), and Jesse Partridge (fiddle, piano)"
+        }
+      ],
       "program": {
         "break_after": 5,
         "dances": [
@@ -111,8 +119,12 @@
       "series": "Corvallis Folklore Society",
       "series_url": "https://corvallisfolklore.org/home/contradancing/",
       "location": "Corvallis, OR",
-      "band": "Peter and the Wolf Tones",
-      "band_members": "George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)",
+      "bands": [
+        {
+          "name": "Peter and the Wolf Tones",
+          "members": "George Penk (fiddle), Jesse Shafer (cello, guitar, vocals), Heather Pinney (fiddle, piano)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [
@@ -168,7 +180,11 @@
       "series": "Lake City Contra Dance",
       "series_url": "https://www.seattledance.org/contra/lakecity/",
       "location": "Seattle, WA",
-      "band": "John Parejko (fiddle and foot percussion), Koren Wake (fiddle), Anita Anderson (piano)",
+      "bands": [
+        {
+          "name": "John Parejko (fiddle and foot percussion), Koren Wake (fiddle), Anita Anderson (piano)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [
@@ -226,8 +242,12 @@
       "series": "Emerald City Contra",
       "series_url": "https://www.seattledance.org/contra/emeraldcity/",
       "location": "Seattle, WA",
-      "band": "Heliotrope",
-      "band_members": "Robin Brown (fiddle), Michael Hobart (guitar), Paul Englesberg (flute and concertina), and Greg Sherman (bass)",
+      "bands": [
+        {
+          "name": "Heliotrope",
+          "members": "Robin Brown (fiddle), Michael Hobart (guitar), Paul Englesberg (flute and concertina), and Greg Sherman (bass)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [
@@ -279,7 +299,11 @@
       "series": "Ottawa Contra Dance",
       "series_url": "https://ottawacontra.ca/",
       "location": "Ottawa, Ontario, Canada",
-      "band": "Emily Addison, Keara Leibovitz, and Tim Cutts",
+      "bands": [
+        {
+          "name": "Emily Addison, Keara Leibovitz, and Tim Cutts"
+        }
+      ],
       "program": {
         "break_after": 6,
         "dances": [
@@ -339,9 +363,13 @@
       "series": "Bellingham Country Dance Society",
       "series_url": "https://bellinghamcountrydance.org/",
       "location": "Bellingham, WA",
-      "band": "Springtide",
-      "band_url": "https://www.springtidetrio.com/",
-      "band_members": "Willy Clemetson (fiddle and foot percussion), Elsie Gawler (cello and fiddle), and Ethan Tischler (guitar)",
+      "bands": [
+        {
+          "name": "Springtide",
+          "url": "https://www.springtidetrio.com/",
+          "members": "Willy Clemetson (fiddle and foot percussion), Elsie Gawler (cello and fiddle), and Ethan Tischler (guitar)"
+        }
+      ],
       "program": {
         "break_after": 6,
         "notes": "This event will be held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/",
@@ -386,13 +414,65 @@
       }
     },
     {
+      "date": "2026-10-30",
+      "end_date": "2026-11-01",
+      "series": "Northwest Queer Contra Camp",
+      "series_url": "https://queercontradance.org/nwqueercamp.html",
+      "location": "Vashon, WA",
+      "bands": [
+        {
+          "name": "Avourneen",
+          "url": "https://avourneen.com/",
+          "members": "Adam Goldstein (guitarist/vocalist), Cieran Morden (violin), Alice Alister (bass)"
+        },
+        {
+          "name": "Camper Band",
+          "members": "Melissa Coffey, Mara Kim, and many more"
+        }
+      ],
+      "notes": "Isaac Banner and Christa Torrens were the callers for this weekend as a whole. I had the opportunity to lead 1 workshop and participate in the camper led ECD set. ",
+      "sessions": [
+        {
+          "name": "Backing it Up",
+          "dances": [
+            {
+              "title": "Diana's Delight",
+              "author": "Yoyo Zhou"
+            },
+            {
+              "title": "Heart of Joy",
+              "author": "Chris Page"
+            },
+            {
+              "title": "Jenny Goes to Camp",
+              "author": "Steve Zakon-Anderson"
+            }
+          ]
+        },
+        {
+          "name": "Gremlins English Country Dance",
+          "band": "Camper band",
+          "dances": [
+            {
+              "title": "Farmers Joy",
+              "author": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-11-28",
       "series": "Portland Country Dance Community",
       "series_url": "https://portlandcountrydance.org/",
       "location": "Portland, OR",
-      "band": "Starshine",
-      "band_url": "https://www.instagram.com/starshinetheband/",
-      "band_members": "Anne Peterson, Brooke Tanner, Gabriel Pope, Matt Gimpelevitch, Nathan Brazil, and Claire Williams",
+      "bands": [
+        {
+          "name": "Starshine",
+          "url": "https://www.instagram.com/starshinetheband/",
+          "members": "Anne Peterson, Brooke Tanner, Gabriel Pope, Matt Gimpelevitch, Nathan Brazil, and Claire Williams"
+        }
+      ],
       "program": {}
     }
   ]
