@@ -372,7 +372,7 @@
       ],
       "program": {
         "break_after": 6,
-        "notes": "This event will be held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/",
+        "notes": "This event was held during the Bellingham Celtic Festival https://bellinghamcelticfestival.com/",
         "dances": [
           {
             "title": "Festival Reel 2",
@@ -427,13 +427,14 @@
         },
         {
           "name": "Camper Band",
-          "members": "Melissa Coffey, Mara Kim, and many more"
+          "members": "Melissa Coffey, Mara Kim, Marshall Gould, Koren Wake"
         }
       ],
       "notes": "Isaac Banner and Christa Torrens were the callers for this weekend as a whole. I had the opportunity to lead 1 workshop and participate in the camper led ECD set. ",
       "sessions": [
         {
           "name": "Backing it Up",
+          "band": "Avourneen",
           "dances": [
             {
               "title": "Diana's Delight",
@@ -455,7 +456,7 @@
           "dances": [
             {
               "title": "Farmers Joy",
-              "author": ""
+              "author": "Joseph Pimentel"
             }
           ]
         }
