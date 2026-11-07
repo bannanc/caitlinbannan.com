@@ -32,6 +32,8 @@ for (const file of gigFiles) {
 allGigs.forEach(gig => {
     // Parse date as UTC to avoid timezone issues
     gig.dateObj = new Date(gig.date + 'T00:00:00Z');
+    // Multi-day events stay "upcoming" until their last day
+    gig.endObj = gig.end_date ? new Date(gig.end_date + 'T00:00:00Z') : gig.dateObj;
 });
 
 // Today's date (set to start of day for accurate comparison)
@@ -40,11 +42,11 @@ today.setHours(0, 0, 0, 0);
 
 // Split gigs into upcoming vs previous
 const upcoming = allGigs
-    .filter(gig => gig.dateObj >= today)
+    .filter(gig => gig.endObj >= today)
     .sort((a, b) => a.dateObj - b.dateObj);
 
 const previous = allGigs
-    .filter(gig => gig.dateObj < today)
+    .filter(gig => gig.endObj < today)
     .sort((a, b) => b.dateObj - a.dateObj);
 
 module.exports = {

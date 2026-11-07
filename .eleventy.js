@@ -59,6 +59,19 @@ module.exports = function (eleventyConfig) {
   return DateTime.fromISO(dateObj).toFormat(format);
 });
 
+  // Gig dates, with an optional end date for multi-day events.
+  //   withWeekday: "Fri, Oct 30" / "Fri–Sun, Oct 30–Nov 1" / "Fri–Sat, Oct 30–31"
+  //   otherwise:   "Oct 30"      / "Oct 30–Nov 1"          / "Oct 30–31"
+  eleventyConfig.addFilter("gigDates", (start, end, withWeekday = false) => {
+    const s = DateTime.fromISO(start);
+    const e = end ? DateTime.fromISO(end) : null;
+    if (!e || e.equals(s)) {
+      return s.toFormat(withWeekday ? "EEE, MMM d" : "MMM d");
+    }
+    const days = `${s.toFormat("MMM d")}–${e.toFormat(e.hasSame(s, "month") ? "d" : "MMM d")}`;
+    return withWeekday ? `${s.toFormat("EEE")}–${e.toFormat("EEE")}, ${days}` : days;
+  });
+
 
   return {
     templateFormats: ['md', 'njk', 'html'],

@@ -64,9 +64,11 @@ Interior page headers always use:
 - `src/_data/home.json` — hero image, body text, featured videos
 - `src/_data/about.json` — about page photo path
 - `src/_data/gigs.js` — loads all gig JSON files, splits into upcoming/previous
-- `src/_data/gigs/YYYY.json` — one file per year of gigs
+- `src/_data/gigs/YYYY.json` — one file per year of gigs (**generated from external database — never hand-edit**)
 - `src/_data/choreography.js` — loads all choreography JSON files
-- `src/_data/choreography/*.json` — one file per dance
+- `src/_data/choreography/*.json` — one file per dance (**generated from external database — never hand-edit**)
+
+See `SKILL-data.md` for details. Data fixes go in the database; display fixes go in the templates.
 
 ---
 

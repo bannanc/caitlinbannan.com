@@ -73,7 +73,7 @@ Two-part card: navy header + white body.
 - Break: full-width horizontal rule with "BREAK" centered in small caps
 - Notes: italic muted text below the program, with a top border separator, indented to align with dance titles
 
-**JSON fields for dances:**
+**JSON fields for dances** (generated from the external database — never hand-edit; see `SKILL-data.md`):
 - `title` — dance name (required)
 - `author` — choreographer (required)
 - `slug` — present only for Caitlin's own dances, matches choreography JSON filename

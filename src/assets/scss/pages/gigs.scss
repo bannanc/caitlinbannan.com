@@ -96,6 +96,39 @@
   font-style: italic;
 }
 
+.upcoming-gig-card__bands {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.upcoming-gig-card__band-item p {
+  margin: 0;
+}
+
+.upcoming-gig-card__band a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--color-text-on-dark);
+    border-bottom: none;
+  }
+}
+
+.upcoming-gig-card__sessions {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 0;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  font-size: 1.1rem;
+  color: var(--color-text-on-dark-muted);
+
+  li + li {
+    margin-top: 2px;
+  }
+}
+
 .upcoming-gigs__empty {
   font-size: 1.5rem;
   color: var(--color-text-secondary);
@@ -166,7 +199,7 @@
   padding: 12px 16px 12px;
   border-bottom: none;
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: minmax(56px, max-content) 1fr;
   gap: 10px;
   align-items: start;
   background: var(--color-navy);
@@ -245,6 +278,40 @@
 /* Program list */
 .program {
   padding: 10px 16px 14px 16px;
+}
+
+.gig-entry__band-item + .gig-entry__band-item {
+  margin-top: 4px;
+}
+
+.gig-entry__band a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--color-text-on-dark);
+    border-bottom: none;
+  }
+}
+
+.program__session {
+  margin: 0;
+  padding: 14px 16px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  & + .program {
+    padding-top: 4px;
+  }
+}
+
+.program__session-band {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 .program__dance {

@@ -1,5 +1,14 @@
 # Caitlin Bannan Website — Data Structures
 
+## ⚠️ Gig and choreography JSON files are generated — never hand-edit
+
+`src/_data/gigs/YYYY.json` and `src/_data/choreography/*.json` are exported from an external database. Do not edit, add, rename, or delete these files by hand: manual changes will be overwritten by the next export.
+
+- Data fixes (typos, missing fields, wrong band, etc.) must be made in the database, then re-exported.
+- If a data problem is noticed while working on the site, report it to Caitlin instead of fixing the JSON.
+- Display problems should be solved in the templates (`.njk`), not by changing the data.
+- The formats below are documented so templates can read the data correctly, not as instructions for writing it.
+
 ## Gig JSON format
 
 One file per year in `src/_data/gigs/YYYY.json`.
@@ -167,7 +176,4 @@ The homepage sorts by `date` descending using the custom `sortByDate` Eleventy f
 
 ## Current dances
 
-As of the last update, there are three choreography JSON files:
-- `on_the_third_hand.json` — slug: `on_the_third_hand`
-- `zig_it_right.json` — slug: `zig_it_right`
-- `rofl_in_hey.json` — slug: `rofl_in_hey` (not yet called publicly)
+The set of dances is controlled by the database export. To see the current list, look at the filenames in `src/_data/choreography/` (each filename minus `.json` is the slug).

@@ -171,6 +171,39 @@
   font-style: italic;
 }
 
+.gig-card__bands {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gig-card__band-item p {
+  margin: 0;
+}
+
+.gig-card__band a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--color-text-on-dark);
+    border-bottom: none;
+  }
+}
+
+.gig-card__sessions {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 0;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  font-size: 1.1rem;
+  color: var(--color-text-on-dark-muted);
+
+  li + li {
+    margin-top: 2px;
+  }
+}
+
 /* ---- Booking strip ---- */
 
 .booking-strip {
@@ -297,12 +330,17 @@
   gap: 2px;
 }
 
-.video-card__title {
-  font-weight: 500;
+.video-card__band {
+  font-size: 1.7rem;
+  font-weight: 600;
   color: var(--color-navy);
 }
 
 .video-card__event {
+  font-weight: 500;
+}
+
+.video-card__dance {
   color: var(--color-text-muted);
   font-size: 1.2rem;
 }
