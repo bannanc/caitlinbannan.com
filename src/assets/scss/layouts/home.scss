@@ -330,12 +330,17 @@
   gap: 2px;
 }
 
-.video-card__title {
-  font-weight: 500;
+.video-card__band {
+  font-size: 1.7rem;
+  font-weight: 600;
   color: var(--color-navy);
 }
 
 .video-card__event {
+  font-weight: 500;
+}
+
+.video-card__dance {
   color: var(--color-text-muted);
   font-size: 1.2rem;
 }

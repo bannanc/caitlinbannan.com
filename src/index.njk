@@ -107,10 +107,15 @@ eleventyNavigation:
               </div>
             </div>
             <p class="video-card__caption">
-              <span class="video-card__title">{{ video.title }}</span>
+              {% if video.band %}
+                <span class="video-card__band">{{ video.band }}</span>
+              {% endif %}
               {% if video.event %}
                 <span class="video-card__event">{{ video.event }}</span>
               {% endif %}
+              <span class="video-card__dance">
+                {{ video.title }}{% if video.choreographer %} by {{ video.choreographer }}{% endif %}
+              </span>
             </p>
           </a>
         {% endfor %}
